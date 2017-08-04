@@ -1,4 +1,4 @@
-# Bare Essentials
+# The Bare Essentials
 
 Let's get right down to it - what are the bare essentials required for using CrystGLFW? We'll need to start by making sure we've got GLFW3 on our system.
 

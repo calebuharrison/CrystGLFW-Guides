@@ -6,7 +6,7 @@
 
 ## Getting Started
 
-* [Bare Essentials](creating-a-crystglfw-project.md)
+* [The Bare Essentials](creating-a-crystglfw-project.md)
 * [The Run Block](the-run-block.md)
-* [Defining Methods](methods.md)
+* [The Skeleton](methods.md)
 

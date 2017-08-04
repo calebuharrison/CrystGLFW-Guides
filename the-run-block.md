@@ -23,5 +23,15 @@ CrystGLFW.run do
 
   # That's more like it! Thanks, `run`!
   window = CrystGLFW::Window.new(title: "My Much More Successful Window")
+  
+  # do cool stuff with your window here
+  until window.should_close?
+    CrystGLFW.wait_events
+    window.swap_buffers
+  end
+  
+  # she had a good life, time to put her down.
+  window.destroy
 end
 ```
+Of course, if you actually compile and run the code above, your poor program won't make it to the happy part - the part where that successful window gets created and lives a happy life, then dies comfortably surrounded by friends and family. No, if you try to run this code, CrystGLFW will toss you a `CrystGLFW::Error::NotInitialized` exception at runtime by default. More on that later!
