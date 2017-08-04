@@ -35,3 +35,4 @@ CrystGLFW.run do
 end
 ```
 Of course, if you actually compile and run the code above, your poor program won't make it to the happy part - the part where that successful window gets created and lives a happy life, then dies comfortably surrounded by friends and family. No, if you try to run this code, CrystGLFW will toss you a `CrystGLFW::Error::NotInitialized` exception at runtime by default. More on that later!
+

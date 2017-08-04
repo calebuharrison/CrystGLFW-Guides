@@ -45,3 +45,4 @@ winston.destroy
 The `CrystGLFW::Window#destroy` method will destroy the underlying GLFW window that is wrapped by CrystGLFW, rendering the local variable `winston` completely unusable. Any further attempt to use `winston` or access any of its attributes will result in a raised exception.
 
 Technically, in this particular example, calling `destroy` on `winston` is unnecessary, since the `run` block will clean up whatever is left when it reaches its end. If, however, you want to close a window long before you want to terminate GLFW as a whole, then you will want to use `CrystGLFW::Window#destroy`.
+

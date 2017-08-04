@@ -64,3 +64,4 @@ CrystGLFW::Window # => CrystGLFW::Window
 Window # => CrystGLFW::Window
 ```
 Including the CrystGLFW module can make your code cleaner and much less of a drag to write, but it can also increase the odds of clashing with another type's name in your project. The choice is up to you!
+
