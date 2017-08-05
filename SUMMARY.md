@@ -26,6 +26,8 @@
     * [Channels and Size](deep-dive/monitor/gamma-ramps/channels-and-size.md)
   * [Gamma Exponents](deep-dive/monitor/gamma-exponents.md)
 * [Windows](deep-dive/window.md)
+  * [Creating a Window](deep-dive/window/creating-a-window.md)
+    * Window Hints
 * [Errors](deep-dive/errors.md)
 * [Events](deep-dive/events.md)
 * [Joysticks](deep-dive/joysticks.md)
