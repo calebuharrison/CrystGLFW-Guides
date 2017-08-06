@@ -37,9 +37,9 @@
   * [Size Limits](deep-dive/window/size-limits.md)
   * [Aspect Ratio](deep-dive/window/aspect-ratio.md)
   * [Framebuffer and Frame Size](deep-dive/window/framebuffer-and-frame-size.md)
-  * Iconify and Restore
-  * Maximize and Focus
-  * Show and Hide
+  * [Iconify and Restore](deep-dive/window/iconify-and-restore.md)
+  * [Maximize and Focus](deep-dive/window/maximize-and-focus.md)
+  * [Show and Hide](deep-dive/window/show-and-hide.md)
   * Full Screen
   * Icons
   * Checking State
