@@ -2,7 +2,7 @@
 
 Go ahead - I dare you. Just *try* to use CrystGLFW in a meaningful way without a main loop of some sort. I'll wait!
 
-Obviously, at the heart of every CrystGLFW program is a main loop that draws a window (or multiple windows!) to a monitor (or multiple monitors!) while it processes some sort of input event (or multiple input events!) until it is closed by either the user or the program logic.
+Obviously, at the heart of every CrystGLFW program is a main loop that draws a window (or multiple windows!) to a monitor (or multiple monitors!) while it processes some sort of input event (or multiple input events!) until it is closed by either the user or the application logic.
 
 This guide cannot possibly predict all of the use cases you might have for CrystGLFW, but if this guide were a betting guide, it would probably put its money on your loop looking something like the one in this example:
 

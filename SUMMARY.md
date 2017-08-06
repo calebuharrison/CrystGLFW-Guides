@@ -27,11 +27,49 @@
   * [Gamma Exponents](deep-dive/monitor/gamma-exponents.md)
 * [Windows](deep-dive/window.md)
   * [Creating a Window](deep-dive/window/creating-a-window.md)
-    * Window Hints
-* [Errors](deep-dive/errors.md)
-* [Events](deep-dive/events.md)
-* [Joysticks](deep-dive/joysticks.md)
-* [Images](deep-dive/images.md)
+    * [Hints](deep-dive/window/creating-a-window/window-hints.md)
+  * [Marking a Window for Closing](deep-dive/window/marking-a-window-for-closing.md)
+  * [Title](deep-dive/window/retrieving-and-setting-a-title.md)
+  * [Position](deep-dive/window/position.md)
+  * [Size](deep-dive/window/size.md)
+  * [Corners](deep-dive/window/corners.md)
+  * [The 'contains?' Method](deep-dive/window/contains.md)
+  * [Size Limits](deep-dive/window/size-limits.md)
+  * [Aspect Ratio](deep-dive/window/aspect-ratio.md)
+  * [Framebuffer and Frame Size](deep-dive/window/framebuffer-and-frame-size.md)
+  * Iconify and Restore
+  * Maximize and Focus
+  * Show and Hide
+  * Full Screen
+  * Icons
+  * Checking State
+  * Cursors
+  * Cursor Modes
+  * Sticky Keys
+  * Sticky Mouse Buttons
+  * The Clipboard
+  * Make Context Current
+  * Swapping Buffers
+  * Callbacks
+    * On Move
+    * On Resize
+    * On Close
+    * On Refresh
+    * On Toggle Focus
+    * On Toggle Iconification
+    * On Framebuffer Resize
+    * On Key
+    * On Char
+    * On Mouse Button
+    * On Scroll
+    * On Cursor Cross Threshold
+    * On Cursor Move
+    * On File Drop
 * [Keys](deep-dive/keys.md)
 * [Mouse Buttons](deep-dive/mouse-buttons.md)
+* [Joysticks / Controllers](deep-dive/joysticks.md)
+* [Images](deep-dive/images.md)
+* [Events](deep-dive/events.md)
+* [Modifiers](deep-dive/modifiers.md)
+* [Modifiers](deep-dive/modifiers.md)
 

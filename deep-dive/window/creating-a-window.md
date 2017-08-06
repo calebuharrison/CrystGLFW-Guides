@@ -87,3 +87,5 @@ wilfred = Window.new(sharing_window: winston)
 ```
 
 ## *hints*
+
+There are a number of constraints that can be placed on the created window that are set with a `Hash` of "hints." Window creation hints are robust and complex, so they have [their own article](/deep-dive/window/creating-a-window/window-hints.md).
