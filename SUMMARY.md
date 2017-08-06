@@ -40,7 +40,7 @@
   * [Iconify and Restore](deep-dive/window/iconify-and-restore.md)
   * [Maximize and Focus](deep-dive/window/maximize-and-focus.md)
   * [Show and Hide](deep-dive/window/show-and-hide.md)
-  * Full Screen
+  * [Full Screen](deep-dive/window/full-screen.md)
   * Icons
   * Checking State
   * Cursors
