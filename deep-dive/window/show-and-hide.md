@@ -11,7 +11,7 @@ window = Window.new
 
 # some code that results in the window being hidden
 
-window.hide # makes the window visible again.
+window.show # makes the window visible again.
 ```
 
 By default, windows are visible upon creation, though this can be configured via [hints](/deep-dive/window/creating-a-window/window-hints.md).
