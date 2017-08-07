@@ -28,6 +28,7 @@
 * [Windows](deep-dive/window.md)
   * [Creating a Window](deep-dive/window/creating-a-window.md)
     * [Hints](deep-dive/window/creating-a-window/window-hints.md)
+  * [Destroying a Window](deep-dive/window/destroying-a-window.md)
   * [Marking a Window for Closing](deep-dive/window/marking-a-window-for-closing.md)
   * [Title](deep-dive/window/retrieving-and-setting-a-title.md)
   * [Position](deep-dive/window/position.md)
@@ -42,7 +43,6 @@
   * [Show and Hide](deep-dive/window/show-and-hide.md)
   * [Full Screen](deep-dive/window/full-screen.md)
   * [Checking State](deep-dive/window/checking-state.md)
-  * [The Clipboard](deep-dive/window/the-clipboard.md)
   * [Sticky Keys](deep-dive/window/sticky-keys.md)
   * Sticky Mouse Buttons
   * [Icons](deep-dive/window/icons.md)
