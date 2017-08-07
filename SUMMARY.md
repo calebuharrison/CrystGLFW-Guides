@@ -45,14 +45,14 @@
   * [Full Screen](deep-dive/window/full-screen.md)
   * [Checking State](deep-dive/window/checking-state.md)
   * [Sticky Keys](deep-dive/window/sticky-keys.md)
-  * Sticky Mouse Buttons
+  * [Sticky Mouse Buttons](deep-dive/window/sticky-mouse-buttons.md)
   * [Images](deep-dive/images.md)
   * [Icons](deep-dive/window/icons.md)
   * [Cursors](deep-dive/window/cursors.md)
-  * Cursor Modes
-  * Make Context Current
-  * Swapping Buffers
-  * Callbacks
+  * [Cursor Modes](deep-dive/window/cursor-modes.md)
+  * [Make Context Current](deep-dive/window/make-context-current.md)
+  * [Swapping Buffers](deep-dive/window/swapping-buffers.md)
+  * [Callbacks](deep-dive/window/callbacks.md)
     * On Move
     * On Resize
     * On Close
