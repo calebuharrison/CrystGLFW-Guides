@@ -1,13 +1,13 @@
-# `CrystGLFW::VideoMode`
+# `CrystGLFW::Monitor::VideoMode`
 
-A `CrystGLFW::VideoMode` (or `VideoMode` for the purposes of this guide) represents a video mode, which is an attribute of `Monitor`. Objects of type `VideoMode` are created and destroyed internally.
+A `CrystGLFW::Monitor::VideoMode` (or `VideoMode` for the purposes of this guide) represents a video mode, which is an attribute of `Monitor`. Objects of type `VideoMode` are created and destroyed internally.
 
 ## `video_mode`
 
 The current video mode of a `Monitor` can be retrieved using the `video_mode` method:
 
 ```crystal
-video_mode = monitor.video_mode # => CrystGLFW::VideoMode
+video_mode = monitor.video_mode # => CrystGLFW::Monitor::VideoMode
 ```
 
 `video_mode` must be called from within a `run` block definition.

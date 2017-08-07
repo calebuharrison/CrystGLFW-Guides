@@ -9,6 +9,7 @@
 * [The Bare Essentials](creating-a-crystglfw-project.md)
 * [The Run Block](the-run-block.md)
 * [The Skeleton](the-skeleton.md)
+* [Screen Coordinates](screen-coordinates.md)
 
 ## Deep Dive
 
@@ -45,6 +46,7 @@
   * [Checking State](deep-dive/window/checking-state.md)
   * [Sticky Keys](deep-dive/window/sticky-keys.md)
   * Sticky Mouse Buttons
+  * [Images](deep-dive/images.md)
   * [Icons](deep-dive/window/icons.md)
   * [Cursors](deep-dive/window/cursors.md)
   * Cursor Modes
@@ -68,8 +70,22 @@
 * [Keys](deep-dive/keys.md)
 * [Mouse Buttons](deep-dive/mouse-buttons.md)
 * [Joysticks / Controllers](deep-dive/joysticks.md)
-* [Images](deep-dive/images.md)
 * [Events](deep-dive/events.md)
-* [Modifiers](deep-dive/modifiers.md)
-* [Modifiers](deep-dive/modifiers.md)
+  * MonitorToggleConnection
+  * [JoystickToggleConnection](deep-dive/events/joysticktoggleconnection.md)
+  * WindowMove
+  * [WindowResize](deep-dive/events/windowresize.md)
+  * WindowClose
+  * [WindowRefresh](deep-dive/events/windowrefresh.md)
+  * WindowToggleFocus
+  * WindowToggleIconification
+  * WindowFramebufferResize
+  * WindowKey
+  * [WindowChar](deep-dive/events/windowcharacter.md)
+  * WindowMouseButton
+  * WindowScroll
+  * WindowCursorCrossThreshold
+  * WindowCursorMove
+  * WindowFileDrop
+  * [Modifiers](deep-dive/modifiers.md)
 

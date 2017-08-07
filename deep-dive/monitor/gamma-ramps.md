@@ -1,12 +1,12 @@
-# `CrystGLFW::GammaRamp`
+# `CrystGLFW::Monitor::GammaRamp`
 
-A `CrystGLFW::GammaRamp` (or `GammaRamp`, for the purposes of this guide) represents a gamma ramp belonging to a `Monitor`. Objects of type `GammaRamp` are created and destroyed internally.
+A `CrystGLFW::Monitor::GammaRamp` (or `GammaRamp`, for the purposes of this guide) represents a gamma ramp belonging to a `Monitor`. Objects of type `GammaRamp` are created and destroyed internally.
 
 ## `gamma_ramp`
 The current gamma ramp of a `Monitor` can be retrieved using the `gamma_ramp` method:
 
 ```crystal
-gamma_ramp = CrystGLFW::Monitor.primary.gamma_ramp # => CrystGLFW::GammaRamp
+gamma_ramp = CrystGLFW::Monitor.primary.gamma_ramp # => CrystGLFW::Monitor::GammaRamp
 ```
 `gamma_ramp` must be called from within a `run` block definition.
 
