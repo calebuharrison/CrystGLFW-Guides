@@ -41,8 +41,8 @@
   * [Maximize and Focus](deep-dive/window/maximize-and-focus.md)
   * [Show and Hide](deep-dive/window/show-and-hide.md)
   * [Full Screen](deep-dive/window/full-screen.md)
-  * Icons
-  * Checking State
+  * [Checking State](deep-dive/window/checking-state.md)
+  * [Icons](deep-dive/window/icons.md)
   * Cursors
   * Cursor Modes
   * Sticky Keys
