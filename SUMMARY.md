@@ -42,12 +42,12 @@
   * [Show and Hide](deep-dive/window/show-and-hide.md)
   * [Full Screen](deep-dive/window/full-screen.md)
   * [Checking State](deep-dive/window/checking-state.md)
+  * [The Clipboard](deep-dive/window/the-clipboard.md)
   * [Sticky Keys](deep-dive/window/sticky-keys.md)
   * Sticky Mouse Buttons
   * [Icons](deep-dive/window/icons.md)
   * [Cursors](deep-dive/window/cursors.md)
   * Cursor Modes
-  * The Clipboard
   * Make Context Current
   * Swapping Buffers
   * Callbacks
