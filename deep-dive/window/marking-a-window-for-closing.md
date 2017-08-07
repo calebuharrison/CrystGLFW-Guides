@@ -8,7 +8,7 @@ until window.should_close?
 end
 ```
 
-A `Window` is marked for closing either when a user "exes out" of it or when your application logic manually marks it. The window is not actually "closed" until it is destroyed. 
+A `Window` is marked for closing either when a user "exes out" of it or when your application logic manually marks it. The window is not actually "closed" until it is [destroyed](/deep-dive/window/destroying-a-window.md). 
 
  ## `should_close?`
  You can check whether or not a `Window` is currently marked for closing with the `should_close?` method:
