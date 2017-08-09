@@ -49,6 +49,7 @@
   * [Images](deep-dive/images.md)
   * [Icons](deep-dive/window/icons.md)
   * [Cursors](deep-dive/window/cursors.md)
+    * [Cursor Methods](deep-dive/window/cursors/cursor-methods.md)
   * [Cursor Modes](deep-dive/window/cursor-modes.md)
   * [Make Context Current](deep-dive/window/make-context-current.md)
   * [Swapping Buffers](deep-dive/window/swapping-buffers.md)
