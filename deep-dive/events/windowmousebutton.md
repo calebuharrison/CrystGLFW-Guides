@@ -1,0 +1,1 @@
+# `CrystGLFW::Event::WindowMouseButton`

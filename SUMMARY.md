@@ -54,39 +54,39 @@
   * [Make Context Current](deep-dive/window/make-context-current.md)
   * [Swapping Buffers](deep-dive/window/swapping-buffers.md)
   * [Callbacks](deep-dive/window/callbacks.md)
-    * On Move
-    * On Resize
-    * On Close
-    * On Refresh
-    * On Toggle Focus
-    * On Toggle Iconification
-    * On Framebuffer Resize
-    * On Key
-    * On Char
-    * On Mouse Button
-    * On Scroll
-    * On Cursor Cross Threshold
-    * On Cursor Move
-    * On File Drop
+    * [On Move](deep-dive/window/callbacks/on-move.md)
+    * [On Resize](deep-dive/window/callbacks/on-resize.md)
+    * [On Close](deep-dive/window/callbacks/on-close.md)
+    * [On Refresh](deep-dive/window/callbacks/on-refresh.md)
+    * [On Toggle Focus](deep-dive/window/callbacks/on-toggle-focus.md)
+    * [On Toggle Iconification](deep-dive/window/callbacks/on-toggle-iconification.md)
+    * [On Framebuffer Resize](deep-dive/window/callbacks/on-framebuffer-resize.md)
+    * [On Key](deep-dive/window/callbacks/on-key.md)
+    * [On Char](deep-dive/window/callbacks/on-char.md)
+    * [On Mouse Button](deep-dive/window/callbacks/on-mouse-button.md)
+    * [On Scroll](deep-dive/window/callbacks/on-scroll.md)
+    * [On Cursor Cross Threshold](deep-dive/window/callbacks/on-cursor-cross-threshold.md)
+    * [On Cursor Move](deep-dive/window/callbacks/on-cursor-move.md)
+    * [On File Drop](deep-dive/window/callbacks/on-file-drop.md)
 * [Keys](deep-dive/keys.md)
 * [Mouse Buttons](deep-dive/mouse-buttons.md)
 * [Joysticks / Controllers](deep-dive/joysticks.md)
 * [Events](deep-dive/events.md)
-  * MonitorToggleConnection
+  * [MonitorToggleConnection](deep-dive/events/monitortoggleconnection.md)
   * [JoystickToggleConnection](deep-dive/events/joysticktoggleconnection.md)
-  * WindowMove
+  * [WindowMove](deep-dive/events/windowmove.md)
   * [WindowResize](deep-dive/events/windowresize.md)
-  * WindowClose
+  * [WindowClose](deep-dive/events/windowclose.md)
   * [WindowRefresh](deep-dive/events/windowrefresh.md)
-  * WindowToggleFocus
-  * WindowToggleIconification
-  * WindowFramebufferResize
-  * WindowKey
+  * [WindowToggleFocus](deep-dive/events/windowtogglefocus.md)
+  * [WindowToggleIconification](deep-dive/events/windowtoggleiconification.md)
+  * [WindowFramebufferResize](deep-dive/events/windowframebufferresize.md)
+  * [WindowKey](deep-dive/events/windowkey.md)
   * [WindowChar](deep-dive/events/windowcharacter.md)
-  * WindowMouseButton
-  * WindowScroll
-  * WindowCursorCrossThreshold
-  * WindowCursorMove
-  * WindowFileDrop
+  * [WindowMouseButton](deep-dive/events/windowmousebutton.md)
+  * [WindowScroll](deep-dive/events/windowscroll.md)
+  * [WindowCursorCrossThreshold](deep-dive/events/windowcursorcrossthreshold.md)
+  * [WindowCursorMove](deep-dive/events/windowcursormove.md)
+  * [WindowFileDrop](deep-dive/events/windowfiledrop.md)
   * [Modifiers](deep-dive/modifiers.md)
 
