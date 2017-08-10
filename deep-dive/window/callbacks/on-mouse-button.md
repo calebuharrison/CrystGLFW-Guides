@@ -7,7 +7,7 @@ window = Window.new
 
 window.on_mouse_button do |event|
   mouse_button = event.mouse_button
-  if mouse_button.press? && mouse_button.is? :mouse_button_left
+  if event.press? && mouse_button.is? :mouse_button_left
     puts "the left mouse button was clicked"
   end  
 end
