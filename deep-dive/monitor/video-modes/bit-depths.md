@@ -1,8 +1,8 @@
 # Bit Depths
-You can retrieve the bit depths of `VideoMode` color channels.
+You can retrieve the bit depths of [`VideoMode`](/deep-dive/monitor/video-modes.md) color channels.
 
 ## `red_bits`, `green_bits`, and `blue_bits`
-If you'd like to know the bit depth of the red channel of a `VideoMode`, you can use the `red_bits` method:
+If you'd like to know the bit depth of the red channel of a [`VideoMode`](/deep-dive/monitor/video-modes.md), you can use the `red_bits` method:
 
 ```crystal
 video_mode = Monitor.primary.video_mode

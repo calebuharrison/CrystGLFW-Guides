@@ -1,10 +1,10 @@
 # Full Screen Functionality
 
-A `Window` is said to be "full screened" if it is directly associated with a `Monitor`. If a `Window` is not full screened, then it is "windowed."
+A [`Window`](/deep-dive/window.md) is said to be "full screened" if it is directly associated with a [`Monitor`](/deep-dive/monitor.md). If a [`Window`](/deep-dive/window.md) is not full screened, then it is "windowed."
 
 ## `full_screen?`
 
-You can check to see if a `Window` is full screened by calling the `full_screen?` method:
+You can check to see if a [`Window`](/deep-dive/window.md) is full screened by calling the `full_screen?` method:
 
 ```crystal
 window = Window.new
@@ -19,7 +19,7 @@ window.full_screen? # => true
 
 ## `monitor`
 
-If a `Window` is full screened, you can retrieve the monitor on which it is displayed:
+If a [`Window`](/deep-dive/window.md) is full screened, you can retrieve the monitor on which it is displayed:
 
 ```crystal
 if window.full_screen?
@@ -33,14 +33,14 @@ If the window is not full screened when you attempt to retrieve its monitor, a `
 
 ## `set_monitor` and `monitor=`
 
-To make a `Window` full screened on a given `Monitor`, use the `set_monitor` method:
+To make a [`Window`](/deep-dive/window.md) full screened on a given [`Monitor`](/deep-dive/monitor.md), use the `set_monitor` method:
 
 ```crystal
 window = Window.new
 window.set_monitor(Monitor.primary)
 ```
 
-The current `VideoMode` of the `Monitor` is used upon a `Window` being full screened.
+The current [`VideoMode`](/deep-dive/monitor/video-modes.md) of the [`Monitor` ](/deep-dive/monitor.md)is used upon a [`Window`](/deep-dive/window.md) being full screened.
 
 Alternatively, you can use `monitor=` to achieve the same thing:
 
@@ -53,7 +53,7 @@ Both `set_monitor` and `monitor=` must be called from within a `run` block defin
 
 ## `exit_full_screen`
 
-To make a full screened `Window` run in windowed mode, use the `exit_full_screen` method:
+To make a full screened [`Window`](/deep-dive/window.md) run in windowed mode, use the `exit_full_screen` method:
 
 ```crystal
 window = Window.new(monitor: Monitor.primary)

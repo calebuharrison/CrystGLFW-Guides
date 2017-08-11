@@ -1,6 +1,6 @@
 # `CrystGLFW::Event::WindowFileDrop`
 
-A `CrystGLFW::Event::WindowFileDrop` is generated when one or more files are "drag-and-dropped" onto a `Window`. It is yielded to the block defined by `on_file_drop`.
+A `CrystGLFW::Event::WindowFileDrop` is generated when one or more files are "drag-and-dropped" onto a [`Window`](/deep-dive/window.md). It is yielded to the block defined by [`on_file_drop`](/deep-dive/window/callbacks/on-file-drop.md).
 
 ```crystal
 window = Window.new
@@ -12,7 +12,7 @@ end
 
 ## `window`
 
-You can retrieve the event's associated `Window` using the `window` method:
+You can retrieve the event's associated [`Window`](/deep-dive/window.md) using the `window` method:
 
 ```crystal
 event.window # => CrystGLFW::Window

@@ -36,4 +36,4 @@ CrystGLFW::Monitor.on_toggle_connection do |event|
   end
 end
 ```
-`on_toggle_connection` yields a `CrystGLFW::Event::MonitorToggleConnection` to the block, and can be called from outside of a `run` block definition.
+`on_toggle_connection` yields a [`CrystGLFW::Event::MonitorToggleConnection`](/deep-dive/events/monitortoggleconnection.md) to the block, and can be called from outside of a `run` block definition.

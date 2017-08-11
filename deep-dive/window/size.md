@@ -1,6 +1,6 @@
 # Retrieving and Setting a Window's Size
 
-This *size* of a `Window` is synonymous with its dimensions - a window's *size* describes both its width and its height in screen coordinates.
+This *size* of a [`Window`](/deep-dive/window.md) is synonymous with its dimensions - a window's *size* describes both its width and its height in screen coordinates.
 
 ## `size`
 
@@ -21,7 +21,7 @@ window.size[:height # => 400
 
 ## `set_size` and `size=`
 
-If you wish to manually assign a `Window` a new size, you can do so using the `set_size` method:
+If you wish to manually assign a [`Window`](/deep-dive/window.md) a new size, you can do so using the `set_size` method:
 
 ```crystal
 window = Window.new(width: 600, height: 400)
@@ -44,7 +44,7 @@ window.size # => {width: 640, height: 480}
 
 Both arguments are of type `Int32`.
 
-Alternatively, you can set the *size* of a `Window` using the `size=` method:
+Alternatively, you can set the *size* of a [`Window`](/deep-dive/window.md) using the `size=` method:
 
 ```crystal
 window = Window.new(width: 600, height: 400)

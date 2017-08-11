@@ -1,6 +1,6 @@
 # Gamma Exponents
 
-You can set the `GammaRamp` of a `Monitor` using only an exponent that will be used to seed a new `GammaRamp`.
+You can set the [`GammaRamp`](/deep-dive/monitor/gamma-ramps.md) of a [`Monitor`](/deep-dive/monitor.md) using only an exponent that will be used to seed a new [`GammaRamp`](/deep-dive/monitor/gamma-ramps.md).
 
 ## `set_gamma` and `gamma=`
 

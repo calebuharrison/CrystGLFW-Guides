@@ -1,6 +1,6 @@
 # `on_char`
 
-The `on_char` method defines callback behavior that is triggered when a character is input while a `Window` has input focus. It generates a [`CrystGLFW::Event::WindowChar`](/deep-dive/events/windowchar.md) that is yielded to the block:
+The `on_char` method defines callback behavior that is triggered when a character is input while a [`Window`](/deep-dive/window.md) has input focus. It generates a [`CrystGLFW::Event::WindowChar`](/deep-dive/events/windowchar.md) that is yielded to the block:
 
 ```crystal
 window = Window.new

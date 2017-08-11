@@ -1,6 +1,6 @@
 # `on_mouse_button`
 
-The `on_mouse_button` method defines callback behavior that is triggered when a mouse button is pressed/released while a `Window` has input focus. It generates a [`CrystGLFW::Event::WindowMouseButton`](/deep-dive/events/windowmousebutton.md) that is yielded to the block:
+The `on_mouse_button` method defines callback behavior that is triggered when a mouse button is pressed/released while a [`Window`](/deep-dive/window.md) has input focus. It generates a [`CrystGLFW::Event::WindowMouseButton`](/deep-dive/events/windowmousebutton.md) that is yielded to the block:
 
 ```crystal
 window = Window.new

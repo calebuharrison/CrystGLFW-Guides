@@ -4,7 +4,7 @@ Cursors are objects in their own right in CrystGLFW, and therefore have a few me
 
 ## `window`
 
-You can retrieve a `Cursor` object's associated `Window` using the `window` method:
+You can retrieve a `Cursor` object's associated [`Window`](/deep-dive/window.md) using the `window` method:
 
 ```crystal
 window = cursor.window
@@ -20,7 +20,7 @@ The position of a `Cursor` can be retrieved using the `position` method:
 pos = cursor.position # => NamedTuple(x: Float64, y: Float64)
 ```
 
-A cursor's position is always reported **relative to its window's position**. If a `Cursor` is precisely at the top-left corner of its associated `Window`, then its position is (0, 0).
+A cursor's position is always reported **relative to its window's position**. If a `Cursor` is precisely at the top-left corner of its associated [`Window`](/deep-dive/window.md), then its position is (0, 0).
 
 `position` must be called from within a `run` block definition.
 
@@ -46,7 +46,7 @@ It's important to remember that a cursor's position is always reported and set *
 
 ## `in_window?`
 
-CrystGLFW provides all of the functionality to determine if a `Cursor` object is somewhere inside of its associated `Window` object. You could make this calculation yourself - or you could just use the `in_window?` method:
+CrystGLFW provides all of the functionality to determine if a `Cursor` object is somewhere inside of its associated [`Window`](/deep-dive/window.md) object. You could make this calculation yourself - or you could just use the `in_window?` method:
 
 ```crystal
 if cursor.in_window?
@@ -56,6 +56,6 @@ else
 end
 ```
 
-Obviously, `in_window?` returns `true` when the `Cursor` is inside of its `Window`, and returns `false` otherwise.
+Obviously, `in_window?` returns `true` when the `Cursor` is inside of its [`Window`](/deep-dive/window.md), and returns `false` otherwise.
 
 `in_window?` must be called from within a `run` block definition.

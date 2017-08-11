@@ -1,6 +1,6 @@
 # `CrystGLFW::Event::WindowMouseButton`
 
-A `CrystGLFW::Event::WindowMouseButton` is generated when a mouse button is pressed/released while a `Window` has input focus. It is yielded to the block defined by `on_mouse_button`.
+A `CrystGLFW::Event::WindowMouseButton` is generated when a mouse button is pressed/released while a [`Window`](/deep-dive/window.md) has input focus. It is yielded to the block defined by [`on_mouse_button`](/deep-dive/window/callbacks/on-mouse-button.md).
 
 ```crystal
 window = Window.new
@@ -15,7 +15,7 @@ end
 
 ## `window`
 
-You can retrieve the event's associated `Window` using the `window` method:
+You can retrieve the event's associated [`Window`](/deep-dive/window.md) using the `window` method:
 
 ```crystal
 event.window # => CrystGLFW::Window
@@ -23,7 +23,7 @@ event.window # => CrystGLFW::Window
 
 ## `mouse_button`
 
-You can retrieve the `MouseButton` that was pressed/released using the `mouse_button` method:
+You can retrieve the [`MouseButton`](/deep-dive/mouse-buttons.md) that was pressed/released using the `mouse_button` method:
 
 ```crystal
 event.mouse_button # => CrystGLFW::MouseButton

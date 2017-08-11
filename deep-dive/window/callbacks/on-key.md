@@ -1,6 +1,6 @@
 # `on_key`
 
-The `on_key` method defines callback behavior that is triggered when a key is pressed/released/held while a `Window` has input focus. It generates a [`CrystGLFW::Event::WindowKey`](/deep-dive/events/windowkey.md) that is yielded to the block:
+The `on_key` method defines callback behavior that is triggered when a key is pressed/released/held while a [`Window`](/deep-dive/window.md) has input focus. It generates a [`CrystGLFW::Event::WindowKey`](/deep-dive/events/windowkey.md) that is yielded to the block:
 
 ```crystal
 window = Window.new

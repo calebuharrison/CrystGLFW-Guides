@@ -1,6 +1,6 @@
 # `on_close`
 
-The `on_close` method defines callback behavior that is triggered when a `Window` is closed/destroyed. It generates a [`CrystGLFW::Event::WindowClose`](/deep-dive/events/windowclose.md) that is yielded to the block:
+The `on_close` method defines callback behavior that is triggered when a [`Window`](/deep-dive/window.md) is closed/destroyed. It generates a [`CrystGLFW::Event::WindowClose`](/deep-dive/events/windowclose.md) that is yielded to the block:
 
 ```crystal
 window = Window.new

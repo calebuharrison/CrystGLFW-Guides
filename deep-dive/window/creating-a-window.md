@@ -1,20 +1,20 @@
 # Creating a Window
 
-You can create a `CrystGLFW::Window` with the `new` method:
+You can create a [`Window`](/deep-dive/window.md) with the `new` method:
 
 ```crystal
 window = CrystGLFW::Window.new
 window # => CrystGLFW::Window
 ```
 
-Using `new` to create a `Window` will cause an actual GUI window to be created on the machine - this window contains the OpenGL or OpenGL ES context that can be used for drawing.
+Using `new` to create a [`Window`](/deep-dive/window.md) will cause an actual GUI window to be created on the machine - this window contains the OpenGL or OpenGL ES context that can be used for drawing.
 
 `new` accepts the following arguments, all of which are optional:
 - *width*, the starting width of the window, in screen coordinates.
 - *height*, the starting height of the window, in screen coordinates.
 - *title*, the title of the window, commonly displayed at the top of its frame.
-- *monitor*, the `Monitor` to use for full screen mode.
-- *sharing_window*, the `Window` with which the new window should share resources.
+- *monitor*, the [`Monitor`](/deep-dive/monitor.md) to use for full screen mode.
+- *sharing_window*, the [`Window`](/deep-dive/window.md) with which the new window should share resources.
 - *hints*, a `Hash` of desired constraints that will be placed on the created window.
 
 Let's examine each of these arguments in detail.
@@ -69,7 +69,7 @@ If you'd like for the new window to immediately begin running in full screen mod
 primary_monitor = Monitor.primary
 window = Window.new(monitor: primary_monitor)
 ```
-By default, windows run in windowed mode rather than full screen. Providing a `Monitor` to the *monitor* argument tells CrystGLFW that you'd like to run in full screen mode. Because of this, if *width* and *height* are given alongside *monitor*, then *width* and *height* will be ignored:
+By default, windows run in windowed mode rather than full screen. Providing a [`Monitor`](/deep-dive/monitor.md) to the *monitor* argument tells CrystGLFW that you'd like to run in full screen mode. Because of this, if *width* and *height* are given alongside *monitor*, then *width* and *height* will be ignored:
 
 ```crystal
 primary_monitor = Monitor.primary

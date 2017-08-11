@@ -1,6 +1,6 @@
 # Make Context Current
 
-A `Window` is not simply a GUI window on the screen - it is also an OpenGL or OpenGL ES context. OpenGL and OpenGL ES can juggle multiple contexts, but only one context can be targeted at once. This context is the "current context."
+A [`Window`](/deep-dive/window.md) is not simply a GUI window on the screen - it is also an OpenGL or OpenGL ES context. OpenGL and OpenGL ES can juggle multiple contexts, but only one context can be targeted at once. This context is the "current context."
 
 ## `make_context_current`
 

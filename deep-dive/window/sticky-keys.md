@@ -1,10 +1,10 @@
 # Sticky Keys
 
-"Sticky Keys" is an input mode that forces `key_pressed?` to return `true`  the first time it is called *after* the passed `Key` has been pressed, *regardless* of whether or not the `Key` is still pressed.
+"Sticky Keys" is an input mode that forces `key_pressed?` to return `true`  the first time it is called *after* the passed [`Key`](/deep-dive/keys.md) has been pressed, *regardless* of whether or not the [`Key`](/deep-dive/keys.md) is still pressed.
 
 ## `sticky_keys?`
 
-You can see if a `Window` currently has sticky keys enabled using the `sticky_keys?` method:
+You can see if a [`Window`](/deep-dive/window.md) currently has sticky keys enabled using the `sticky_keys?` method:
 
 ```crystal
 window = Window.new

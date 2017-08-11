@@ -1,6 +1,6 @@
 # Aspect Ratio
 
-You can set the aspect ratio of a `Window` after creation.
+You can set the aspect ratio of a [`Window`](/deep-dive/window.md) after creation.
 
 ## `set_aspect_ratio` and `aspect_ratio=`
 
@@ -17,7 +17,7 @@ You can optionally choose to use keyword arguments:
 window.set_aspect_ratio(numerator: 16, denominator: 9)
 ```
 
-Setting the aspect ratio of a `Window` will only take effect if the window is running in windowed mode (i.e. the window is not full screened). The new aspect ratio is immediately applied and is likely to cause the window to resize itself.
+Setting the aspect ratio of a [`Window`](/deep-dive/window.md) will only take effect if the window is running in windowed mode (i.e. the window is not full screened). The new aspect ratio is immediately applied and is likely to cause the window to resize itself.
 
 An alternative syntax is available in the form of `aspect_ratio=`:
 

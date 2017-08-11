@@ -1,6 +1,6 @@
 # The `contains?` Method
 
-A `Window` is said to contain a location (a pair of coordinates) if that location is somewhere between a window's four corners.
+A [`Window`](/deep-dive/window.md) is said to contain a location (a pair of coordinates) if that location is somewhere between a window's four corners.
 
 ## `contains?`
 

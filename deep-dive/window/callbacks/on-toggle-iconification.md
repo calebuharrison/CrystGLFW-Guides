@@ -1,6 +1,6 @@
 # `on_toggle_iconification`
 
-The `on_toggle_iconification` method defines callback behavior that is triggered when a window's "iconification" is toggled. This occurs either when a `Window` is iconified or restored. It generates a [`CrystGLFW::Event::WindowToggleIconification`](/deep-dive/events/windowtoggleiconification.md) that is yielded to the block:
+The `on_toggle_iconification` method defines callback behavior that is triggered when a window's "iconification" is toggled. This occurs either when a [`Window`](/deep-dive/window.md) is iconified or restored. It generates a [`CrystGLFW::Event::WindowToggleIconification`](/deep-dive/events/windowtoggleiconification.md) that is yielded to the block:
 
 ```crystal
 window = Window.new

@@ -1,6 +1,6 @@
 # CrystGLFW::Window::Cursor
 
-A `CrystGLFW::Window::Cursor` (or `Cursor`, for the purposes of this guide) represents the system cursor *with respect to* a given `Window`. Objects of type `Cursor` are always associated with a `Window` and can only be created indirectly through a `Window`.
+A `CrystGLFW::Window::Cursor` (or `Cursor`, for the purposes of this guide) represents the system cursor *with respect to* a given [`Window`](/deep-dive/window.md). Objects of type `Cursor` are always associated with a [`Window`](/deep-dive/window.md) and can only be created indirectly through a [`Window`](/deep-dive/window.md).
 
 ## `cursor`
 

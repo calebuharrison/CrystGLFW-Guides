@@ -1,6 +1,6 @@
 # `CrystGLFW::Event::WindowChar`
 
-A `CrystGLFW::Event::WindowChar` is generated when a character is input while a `Window` has input focus. It is yielded to the block defined by `on_char`.
+A `CrystGLFW::Event::WindowChar` is generated when a character is input while a [`Window`](/deep-dive/window.md) has input focus. It is yielded to the block defined by [`on_char`](/deep-dive/window/callbacks/on-char.md).
 
 ```crystal
 window = Window.new
@@ -12,7 +12,7 @@ end
 
 ## `window`
 
-You can retrieve the event's associated `Window` using the `window` method:
+You can retrieve the event's associated [`Window`](/deep-dive/window.md) using the `window` method:
 
 ```crystal
 event.window # => CrystGLFW::Window

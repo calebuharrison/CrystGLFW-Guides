@@ -1,6 +1,6 @@
 # Retrieving and Setting a Window's Position
 
-The *position* of a `Window` is a set of screen coordinates that indicate the location of the GUI window's top-left corner relative to the virtual screen.
+The *position* of a [`Window`](/deep-dive/window.md) is a set of screen coordinates that indicate the location of the GUI window's top-left corner relative to the virtual screen.
 
 ## `position`
 

@@ -1,10 +1,10 @@
 # Sticky Mouse Buttons
 
-"Sticky Mouse Buttons" is an input mode that forces `mouse_button_pressed?` to return `true`  the first time it is called *after* the passed `MouseButton` has been pressed, *regardless* of whether or not the `MouseButton` is still pressed.
+"Sticky Mouse Buttons" is an input mode that forces `mouse_button_pressed?` to return `true`  the first time it is called *after* the passed [`MouseButton`](/deep-dive/mouse-buttons.md) has been pressed, *regardless* of whether or not the [`MouseButton`](/deep-dive/mouse-buttons.md) is still pressed.
 
 ## `sticky_mouse_buttons?`
 
-You can see if a `Window` currently has sticky mouse buttons enabled with the `sticky_mouse_buttons?` method:
+You can see if a [`Window`](/deep-dive/window.md) currently has sticky mouse buttons enabled with the `sticky_mouse_buttons?` method:
 
 ```crystal
 window = Window.new

@@ -1,6 +1,6 @@
 # `on_cursor_cross_threshold`
 
-The `on_cursor_cross_threshold` method defines callback behavior that is triggered when the system cursor either enters or exits a `Window`. It generates a [`CrystGLFW::Event::WindowCursorCrossThreshold`](/deep-dive/events/windowcursorcrossthreshold.md) that is yielded to the block:
+The `on_cursor_cross_threshold` method defines callback behavior that is triggered when the system cursor either enters or exits a [`Window`](/deep-dive/window.md). It generates a [`CrystGLFW::Event::WindowCursorCrossThreshold`](/deep-dive/events/windowcursorcrossthreshold.md) that is yielded to the block:
 
 ```crystal
 window = Window.new

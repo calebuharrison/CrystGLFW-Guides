@@ -1,6 +1,6 @@
 # Retrieving a Window's Corners
 
-You have all that you need to retrieve the coordinates of each corner of a `Window` object through `position` and `size`. But how about a shortcut? Why not, right?
+You have all that you need to retrieve the coordinates of each corner of a [`Window`](/deep-dive/window.md) object through `position` and `size`. But how about a shortcut? Why not, right?
 
 ## `corners`
 

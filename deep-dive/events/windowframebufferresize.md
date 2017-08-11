@@ -1,6 +1,6 @@
 # `CrystGLFW::Event::WindowFramebufferResize`
 
-A `CrystGLFW::Event::WindowFramebufferResize` is generated when the frame buffer of a `Window` is resized. It is yielded to the block defined by `on_framebuffer_resize`.
+A `CrystGLFW::Event::WindowFramebufferResize` is generated when the frame buffer of a [`Window`](/deep-dive/window.md) is resized. It is yielded to the block defined by [`on_framebuffer_resize`](/deep-dive/window/callbacks/on-framebuffer-resize.md).
 
 ```crystal
 window = Window.new
@@ -12,7 +12,7 @@ end
 
 ## `window`
 
-You can retrieve the event's associated `Window` using the `window` method:
+You can retrieve the event's associated [`Window`](/deep-dive/window.md) using the `window` method:
 
 ```crystal
 event.window # => CrystGLFW::Window

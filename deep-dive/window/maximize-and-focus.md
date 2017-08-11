@@ -2,7 +2,7 @@
 
 ## `maximize`
 
-To maximize a `Window`, use the `maximize` method:
+To maximize a [`Window`](/deep-dive/window.md), use the `maximize` method:
 
 ```crystal
 window = Window.new
@@ -15,7 +15,7 @@ Maximization can be reversed with the `restore` method.
 
 ## `focus`
 
-To bring a `Window` to the user's attention and receive input, use the `focus` method:
+To bring a [`Window`](/deep-dive/window.md) to the user's attention and receive input, use the `focus` method:
 
 ```crystal
 window = Window.new

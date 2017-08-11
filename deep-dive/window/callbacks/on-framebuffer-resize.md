@@ -1,6 +1,6 @@
 # `on_framebuffer_resize`
 
-The `on_framebuffer_resize` method defines callback behavior that is triggered when the frame buffer of a `Window` is resized. It generates a [`CrystGLFW::Event::WindowFramebufferResize`](/deep-dive/events/windowframebufferresize.md) that is yielded to the block:
+The `on_framebuffer_resize` method defines callback behavior that is triggered when the frame buffer of a [`Window`](/deep-dive/window.md) is resized. It generates a [`CrystGLFW::Event::WindowFramebufferResize`](/deep-dive/events/windowframebufferresize.md) that is yielded to the block:
 
 ```crystal
 window = Window.new

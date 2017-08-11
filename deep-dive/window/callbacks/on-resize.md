@@ -1,6 +1,6 @@
 # `on_resize`
 
-The `on_resize` method defines callback behavior that is triggered when a `Window` is resized. It generates a [`CrystGLFW::Event::WindowResize`](/deep-dive/events/windowresize.md) that is yielded to the block:
+The `on_resize` method defines callback behavior that is triggered when a [`Window`](/deep-dive/window.md) is resized. It generates a [`CrystGLFW::Event::WindowResize`](/deep-dive/events/windowresize.md) that is yielded to the block:
 
 ```crystal
 window = Window.new

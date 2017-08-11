@@ -1,10 +1,10 @@
 # Checking Window State
 
-A `Window` can be in several states, and these states can be checked independently from one another.
+A [`Window`](/deep-dive/window.md) can be in several states, and these states can be checked independently from one another.
 
 ## `focused?`
 
-The `focused?` method returns `true` if the `Window` has input focus, and returns `false` otherwise:
+The `focused?` method returns `true` if the [`Window`](/deep-dive/window.md) has input focus, and returns `false` otherwise:
 
 ```crystal
 window = Window.new
@@ -17,7 +17,7 @@ window.focused? # => true
 
 ## `iconified?`
 
-The `iconified?` method returns `true` if the `Window` is iconified (minimized), and returns `false` otherwise:
+The `iconified?` method returns `true` if the [`Window`](/deep-dive/window.md) is iconified (minimized), and returns `false` otherwise:
 
 ```crystal
 window = Window.new
@@ -36,7 +36,7 @@ window.iconified? # => false
 
 ## `maximized?`
 
-The `maximized?` method returns `true` if the `Window` is maximized, and returns `false` otherwise:
+The `maximized?` method returns `true` if the [`Window`](/deep-dive/window.md) is maximized, and returns `false` otherwise:
 
 ```crystal
 window = Window.new
@@ -55,7 +55,7 @@ window.maximized? # => false
 
 ## `visible?`
 
-The `visible?` method returns `true` if the `Window` is visible to the user, and returns `false` otherwise:
+The `visible?` method returns `true` if the [`Window`](/deep-dive/window.md) is visible to the user, and returns `false` otherwise:
 
 ```crystal
 window = Window.new
@@ -74,7 +74,7 @@ window.visible? # => true
 
 ## `resizable?`
 
-The `resizable?` method returns `true` if the `Window` is not resizable by the user, and returns `false` otherwise:
+The `resizable?` method returns `true` if the [`Window`](/deep-dive/window.md) is not resizable by the user, and returns `false` otherwise:
 
 ```crystal
 window = Window.new
@@ -90,7 +90,7 @@ window.resizable? # => false
 
 ## `decorated?`
 
-The `decorated?` method returns `true` if the `Window` is decorated by a border, and returns `false` otherwise:
+The `decorated?` method returns `true` if the [`Window`](/deep-dive/window.md) is decorated by a border, and returns `false` otherwise:
 
 ```crystal
 window = Window.new
@@ -106,7 +106,7 @@ window.decorated? # => false
 
 ## `floating?`
 
-The `floating?` method returns `true` if the `Window` is "floating" (fixed "above" other GUI windows), and returns `false` otherwise:
+The `floating?` method returns `true` if the [`Window`](/deep-dive/window.md) is "floating" (fixed "above" other GUI windows), and returns `false` otherwise:
 
 ```crystal
 window = Window.new

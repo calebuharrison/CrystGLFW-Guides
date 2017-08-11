@@ -1,10 +1,10 @@
 # Show and Hide
 
-A `Window` does not have to be visible at all times, and the `show` and `hide` methods allow for this behavior.
+A [`Window`](/deep-dive/window.md) does not have to be visible at all times, and the `show` and `hide` methods allow for this behavior.
 
 ## `show`
 
-To make a `Window` visible, use the `show` method:
+To make a [`Window`](/deep-dive/window.md) visible, use the `show` method:
 
 ```crystal
 window = Window.new
@@ -20,7 +20,7 @@ By default, windows are visible upon creation, though this can be configured via
 
 ## `hide`
 
-To make a `Window` invisible, use the `hide` method:
+To make a [`Window`](/deep-dive/window.md) invisible, use the `hide` method:
 
 ```crystal
 window = Window.new

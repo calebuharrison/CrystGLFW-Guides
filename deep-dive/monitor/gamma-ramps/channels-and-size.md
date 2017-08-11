@@ -4,7 +4,7 @@ You can retrieve an array of numbers that represents the response of a color cha
 
 ## `red`, `green`, and `blue`
 
-If you want to get the response of the red channel of a `GammaRamp`, you can use the `red` method:
+If you want to get the response of the red channel of a [`GammaRamp`](/deep-dive/monitor/gamma-ramps.md), you can use the `red` method:
 
 ```crystal
 gamma_ramp.red # => Array(UInt16)

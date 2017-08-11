@@ -1,6 +1,6 @@
 # Icons
 
-When a `Window` is iconified, its *icon* may be displayed by the operating system at its discretion.
+When a [`Window`](/deep-dive/window.md) is iconified, its *icon* may be displayed by the operating system at its discretion.
 
 ## `set_icon` and `icon=`
 

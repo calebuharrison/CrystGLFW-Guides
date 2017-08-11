@@ -1,6 +1,6 @@
 # `CrystGLFW::Event::WindowKey`
 
-A `CrystGLFW::Event::WindowKey` is generated when a key is pressed/released/held while a `Window` has input focus. It is yielded to the block defined by `on_key`.
+A `CrystGLFW::Event::WindowKey` is generated when a key is pressed/released/held while a [`Window`](/deep-dive/window.md) has input focus. It is yielded to the block defined by [`on_key`](/deep-dive/window/callbacks/on-key.md).
 
 ```crystal
 window = Window.new
@@ -19,7 +19,7 @@ end
 
 ## `window`
 
-You can retrieve the event's associated `Window` using the `window` method:
+You can retrieve the event's associated [`Window`](/deep-dive/window.md) using the `window` method:
 
 ```crystal
 event.window # => CrystGLFW::Window
@@ -27,7 +27,7 @@ event.window # => CrystGLFW::Window
 
 ## `key`
 
-You can retrieve the `Key` that was pressed/released/held using the `key` method:
+You can retrieve the [`Key`](/deep-dive/keys.md) that was pressed/released/held using the `key` method:
 
 ```crystal
 event.key # => CrystGLFW::Key

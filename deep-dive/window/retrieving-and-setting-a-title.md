@@ -1,10 +1,10 @@
 # Retrieving and Setting a Window's Title
 
-The *title* of a `Window` is usually displayed along the top of the window's frame. A *title* can be set upon the creation of a `Window`, but it can also be retrieved and updated.
+The *title* of a [`Window`](/deep-dive/window.md) is usually displayed along the top of the window's frame. A *title* can be set upon the creation of a [`Window`](/deep-dive/window.md), but it can also be retrieved and updated.
  
 ## `title`
 
-You can retrieve the current title of a `Window` object using the `title` method:
+You can retrieve the current title of a [`Window`](/deep-dive/window.md) object using the `title` method:
 
 ```crystal
 window = Window.new(title: "Winston the Window")

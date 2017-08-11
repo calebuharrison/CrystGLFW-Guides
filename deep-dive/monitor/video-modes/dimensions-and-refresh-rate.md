@@ -1,10 +1,10 @@
 # Width, Height, and Refresh Rate
 
-You can retrieve the dimensions and the refresh rate of a `VideoMode` object.
+You can retrieve the dimensions and the refresh rate of a [`VideoMode`](/deep-dive/monitor/video-modes.md) object.
 
 ## `width`, `height`, and `size`
 
-If you'd like to know the width of a `VideoMode`, use the `width` method:
+If you'd like to know the width of a [`VideoMode`](/deep-dive/monitor/video-modes.md), use the `width` method:
 
 ```crystal
 video_mode = Monitor.primary.video_mode
@@ -27,7 +27,7 @@ puts "width: #{vm_size[:width]}, height: #{vm_size[:height]}"
 
 ## `refresh_rate`
 
-The refresh rate of a `VideoMode`, in Hz, is available via the `refresh_rate` method:
+The refresh rate of a [`VideoMode`](/deep-dive/monitor/video-modes.md), in Hz, is available via the `refresh_rate` method:
 
 ```crystal
 rr = video_mode.refresh_rate

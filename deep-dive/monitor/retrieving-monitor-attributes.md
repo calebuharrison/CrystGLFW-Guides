@@ -1,12 +1,12 @@
 # Retrieving Position, Physical Size, and Name
 
-`Monitor` has very few public attributes, but here they are! For each of the entries below, assume:
+[`Monitor`](/deep-dive/monitor.md) has very few public attributes, but here they are! For each of the entries below, assume:
 ```crystal
 monitor = CrystGLFW::Monitor.primary
 ```
 
 ## `position`
-You can retrieve the position of a `Monitor`, in screen coordinates, using the `position` method:
+You can retrieve the position of a [`Monitor`](/deep-dive/monitor.md), in screen coordinates, using the `position` method:
 
 ```crystal
 monitor_pos = monitor.position
@@ -30,7 +30,7 @@ puts "And it is approximately #{dimensions[:height]} mm tall."
 `physical_size` must be called from within a `run` block definition.
 
 ## `name`
-Each `Monitor` has a model name given to it by its manufacturer, which can be retrieved with `name`:
+Each [`Monitor`](/deep-dive/monitor.md) has a model name given to it by its manufacturer, which can be retrieved with `name`:
 
 ```crystal
 monitor_name = monitor.name

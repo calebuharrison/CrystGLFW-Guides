@@ -1,6 +1,6 @@
 # `CrystGLFW::Event::WindowResize`
 
-A `CrystGLFW::Event::WindowResize` is generated when a `Window` is resized. It is yielded to the block defined by `on_resize`.
+A `CrystGLFW::Event::WindowResize` is generated when a [`Window`](/deep-dive/window.md) is resized. It is yielded to the block defined by [`on_resize`](/deep-dive/window/callbacks/on-resize.md).
 
 ```crystal
 window = Window.new
@@ -12,7 +12,7 @@ end
 
 ## `window`
 
-You can retrieve the event's associated `Window` using the `window` method:
+You can retrieve the event's associated [`Window`](/deep-dive/window.md) using the `window` method:
 
 ```crystal
 event.window # => CrystGLFW::Window
@@ -20,7 +20,7 @@ event.window # => CrystGLFW::Window
 
 ## `width` and `height`
 
-You can retrieve the new size of the `Window` using the `width` and `height` methods:
+You can retrieve the new size of the [`Window`](/deep-dive/window.md) using the `width` and `height` methods:
 
 ```crystal
 event.width # => Int32

@@ -1,6 +1,6 @@
 # Size Limits
 
-Most of the time, you'll want to constrain the size of a `Window` at creation using [*hints*](/deep-dive/window/creating-a-window/window-hints.md). If, however, you need to contextually constrain the min/max of a window's *size* after creation, CrystGLFW has a solution for you.
+Most of the time, you'll want to constrain the size of a [`Window`](/deep-dive/window.md) at creation using [*hints*](/deep-dive/window/creating-a-window/window-hints.md). If, however, you need to contextually constrain the min/max of a window's *size* after creation, CrystGLFW has a solution for you.
 
 ## `set_size_limits` and `size_limits=`
 
