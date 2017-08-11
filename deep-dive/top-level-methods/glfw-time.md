@@ -7,7 +7,7 @@ As soon as CrystGLFW is initialized, it begins a timer. The value of this timer,
 ```crystal
 current_time = CrystGLFW.time # => 0.13899576
 ```
-`time` must be called after GLFW is initialized, and therefore must be called from within a `run` block definition.
+`time` must be called after GLFW is initialized, and therefore must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `set_time` and `time=`
 You can manually set the timer to whatever value you'd like with the `set_time` method:
@@ -21,7 +21,7 @@ Alternatively, you can use `time=` to do the same thing:
 ```crystal
 CrystGLFW.time = 3.5 # Sets the time to 3 and a half seconds.
 ```
-`set_time` and `time=` must be called from within a `run` block definition.
+`set_time` and `time=` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `timer_frequency` and `timer_value`
 You can retrieve the frequency of the raw timer, in Hz, with `timer_frequency`:
@@ -34,5 +34,5 @@ Additionally, you can retrieve the current value of the raw timer, in 1 / `timer
 ```crystal
 CrystGLFW.timer_value # => 754_104_002_009_408
 ```
-`timer_frequency` and `timer_value` must be called from within a `run` block definition.
+`timer_frequency` and `timer_value` must be called from within a [`run`](/the-run-block.md) block definition.
 

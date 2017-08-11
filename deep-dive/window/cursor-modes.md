@@ -18,7 +18,7 @@ You can set a window's cursor mode to normal using the `normalize_cursor` method
 window.normalize_cursor
 ```
 
-Both `cursor_normal?` and `normalize_cursor` must be called from within a `run` block definition.
+Both `cursor_normal?` and `normalize_cursor` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `cursor_hidden?` and `hide_cursor`
 
@@ -36,7 +36,7 @@ You can set a window's cursor mode to hidden using the `hide_cursor` method:
 window.hide_cursor
 ```
 
-Both `cursor_hidden?` and `hide_cursor` must be called from within a `run` block definition.
+Both `cursor_hidden?` and `hide_cursor` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `cursor_disabled?` and `disable_cursor`
 
@@ -54,4 +54,4 @@ You can set a window's cursor mode to disabled using the `disable_cursor` method
 window.disable_cursor
 ```
 
-Both `cursor_disabled?` and `disable_cursor` must be called from within a `run` block definition.
+Both `cursor_disabled?` and `disable_cursor` must be called from within a [`run`](/the-run-block.md) block definition.

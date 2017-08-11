@@ -23,7 +23,7 @@ puts "width: #{vm_size[:width]}, height: #{vm_size[:height]}"
 ```
 `size` returns a `NamedTuple(width: Int32, height: Int32)`, where `size[:width]` is the width of the video mode and `size[:height]` is the height of the video mode.
 
-`width`, `height`, and `size` must be called from within a `run` block definition.
+`width`, `height`, and `size` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `refresh_rate`
 
@@ -34,4 +34,4 @@ rr = video_mode.refresh_rate
 puts "The refresh rate is #{rr} Hz"
 ```
 
-`refresh_rate` must be called from within a `run` block definition.
+`refresh_rate` must be called from within a [`run`](/the-run-block.md) block definition.

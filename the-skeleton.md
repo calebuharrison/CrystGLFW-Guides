@@ -53,9 +53,9 @@ Once `winston.should_close?` returns `true`, the loop condition will be broken a
 ```crystal
 winston.destroy
 ```
-The `Window#destroy` method will destroy the underlying GLFW window that is wrapped by CrystGLFW, rendering the local variable `winston` completely unusable. Any further attempt to use `winston` or access any of its attributes will result in a raised exception.
+The [`Window#destroy`](/deep-dive/window/destroying-a-window.md) method will destroy the underlying GLFW window that is wrapped by CrystGLFW, rendering the local variable `winston` completely unusable. Any further attempt to use `winston` or access any of its attributes will result in a raised exception.
 
-Technically, in this particular example, calling `destroy` on `winston` is unnecessary, since the `run` block will clean up whatever is left when it reaches its end. If, however, you want to close a window long before you want to terminate GLFW as a whole, then you will want to use `Window#destroy`.
+Technically, in this particular example, calling [`destroy`](/deep-dive/window/destroying-a-window.md) on `winston` is unnecessary, since the [`run`](/the-run-block.md) block will clean up whatever is left when it reaches its end. If, however, you want to close a window long before you want to terminate GLFW as a whole, then you will want to use [`Window#destroy`](/deep-dive/window/destroying-a-window.md).
 
 Believe it or not, you've got all you need to start using OpenGL through CrystGLFW with this simple skeleton. But wait! What about user input? What about callbacks? What about dealing with multiple monitors and creating custom cursors and all of that fun stuff? You can find all of this and more in the Deep Dive section of this guide.
 

@@ -12,4 +12,4 @@ end
 
 With this callback defined, every time a character is input while `window` has input focus, the character is printed to standard output.
 
-`on_char` must be called from within a `run` block definition.
+`on_char` must be called from within a [`run`](/the-run-block.md) block definition.

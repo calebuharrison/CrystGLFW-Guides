@@ -15,4 +15,4 @@ winston.make_context_current
 
 In the above example, even though both `winston` and `wilfred` are valid OpenGL contexts, `winston` becomes the current context and will be the `Window` to receive draw calls until `wilfred` demands to be the current context.
 
-`make_context_current` must be called from within a `run` block definition.
+`make_context_current` must be called from within a [`run`](/the-run-block.md) block definition.

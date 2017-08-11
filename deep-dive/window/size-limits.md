@@ -42,4 +42,4 @@ window.size_limits = constraints
 
 A `NamedTuple` passed to `size_limits=` *must* define constraints for all four options. Otherwise, use `set_size_limits`.
 
-Both `set_size_limits` and `size_limits=` must be called from within a `run` block definition.
+Both `set_size_limits` and `size_limits=` must be called from within a [`run`](/the-run-block.md) block definition.

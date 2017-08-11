@@ -16,4 +16,4 @@ end
 
 With this callback defined, every time the focus of `window` is toggled, it prints whether or not it is focused to standard output.
 
-`on_toggle_focus` must be called from within a `run` block definition.
+`on_toggle_focus` must be called from within a [`run`](/the-run-block.md) block definition.

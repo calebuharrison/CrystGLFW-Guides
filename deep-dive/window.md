@@ -12,4 +12,4 @@ current_window # => CrystGLFW::Window
 ```
 If there is no current context, then a `CrystGLFW::Error::NoCurrentContext` is raised.
 
-`current` must be called from within a `run` block definition.
+`current` must be called from within a [`run`](/the-run-block.md) block definition.

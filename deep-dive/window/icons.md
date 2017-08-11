@@ -22,4 +22,4 @@ window = Window.new
 window.icon = image
 ```
 
-Both `set_icon` and `icon=` must be called from within a `run` block definition.
+Both `set_icon` and `icon=` must be called from within a [`run`](/the-run-block.md) block definition.

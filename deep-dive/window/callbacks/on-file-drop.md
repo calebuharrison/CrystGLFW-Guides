@@ -12,4 +12,4 @@ end
 
 With this callback defined, one or more files are dropped onto `window`, the absolute file path of each file is printed to standard output.
 
-`on_file_drop` must be called from within a `run` block definition.
+`on_file_drop` must be called from within a [`run`](/the-run-block.md) block definition.

@@ -15,7 +15,7 @@ window = Window.new(monitor: monitor)
 window.full_screen? # => true
 ```
 
-`full_screen?` must be called from within a `run` block definition.
+`full_screen?` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `monitor`
 
@@ -29,7 +29,7 @@ end
 
 If the window is not full screened when you attempt to retrieve its monitor, a `CrystGLFW::Error::NotFullScreen` will be raised.
 
-`monitor` must be called from within a `run` block definition.
+`monitor` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `set_monitor` and `monitor=`
 
@@ -49,7 +49,7 @@ window = Window.new
 window.monitor = Monitor.primary
 ```
 
-Both `set_monitor` and `monitor=` must be called from within a `run` block definition.
+Both `set_monitor` and `monitor=` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `exit_full_screen`
 
@@ -84,6 +84,6 @@ Of course, you can also use keyword arguments:
 window.exit_full_screen(x: 250, y: 50, width: 1024, height: 576)
 ```
 
-`exit_full_screen` must be called from within a `run` block definition.
+`exit_full_screen` must be called from within a [`run`](/the-run-block.md) block definition.
 
 

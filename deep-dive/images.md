@@ -33,4 +33,4 @@ image.height # => 16
 image.pixels # => Array(UInt8)
 ```
 
-`width`, `height`, and `pixels` must be called from within a `run` block definition.
+`width`, `height`, and `pixels` must be called from within a [`run`](/the-run-block.md) block definition.

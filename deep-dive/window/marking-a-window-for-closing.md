@@ -20,7 +20,7 @@ window.should_close? # => false
 
 `should_close?` returns `true` if the [`Window`](/deep-dive/window.md) is currently marked for closing, and returns `false` otherwise.
 
-`should_close?` must be called from within a `run` block definition.
+`should_close?` must be called from within a [`run`](/the-run-block.md) block definition.
  
 ## `should_close` and `should_not_close`
 
@@ -46,5 +46,5 @@ window.should_not_close
 window.should_close? # => false
 ```
 
-`should_close` and `should_not_close` must be called from within a `run` block definition.
+`should_close` and `should_not_close` must be called from within a [`run`](/the-run-block.md) block definition.
    

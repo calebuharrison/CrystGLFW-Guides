@@ -16,4 +16,4 @@ Alternatively, you can use `gamma=` to achieve the same thing:
 monitor.gamma = 3
 ```
 
-`set_gamma` and `gamma=` must be called from within a `run` block definition.
+`set_gamma` and `gamma=` must be called from within a [`run`](/the-run-block.md) block definition.

@@ -10,7 +10,7 @@ The current video mode of a [`Monitor`](/deep-dive/monitor.md) can be retrieved 
 video_mode = monitor.video_mode # => CrystGLFW::Monitor::VideoMode
 ```
 
-`video_mode` must be called from within a `run` block definition.
+`video_mode` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `video_modes`
 
@@ -21,4 +21,4 @@ supported_video_modes = monitor.video_modes
 puts supported_video_modes.size # prints the number of video modes supported by *monitor*
 ```
 
-`video_modes` must be called from within a `run` block definition.
+`video_modes` must be called from within a [`run`](/the-run-block.md) block definition.

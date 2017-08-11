@@ -12,4 +12,4 @@ end
 
 With this callback defined, every time the user scrolls while `window` has input focus, the scroll offset is printed to standard output.
 
-`on_scroll` must be called from within a `run` block definition.
+`on_scroll` must be called from within a [`run`](/the-run-block.md) block definition.

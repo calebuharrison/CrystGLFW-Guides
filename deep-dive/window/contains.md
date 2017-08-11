@@ -43,5 +43,5 @@ This allows you to use return values from other `CrystGLFW` methods as arguments
 window.contains? window.corners[:bottom_left] # => true
 ```
 
-`contains?` must be called from within a `run` block definition.
+`contains?` must be called from within a [`run`](/the-run-block.md) block definition.
 

@@ -13,7 +13,7 @@ window.iconify # minimizes the window
 
 If the [`Window`](/deep-dive/window.md) is in full screen mode when `iconify` is called, the [`Monitor`](/deep-dive/monitor.md) will have its original resolution restored until the window is restored.
 
-`iconify` must be called from within a `run` block definition.
+`iconify` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `restore`
 
@@ -26,4 +26,4 @@ window.iconify # minimizes the window
 window.restore # restores the window
 ```
 
-`restore` must be called from within a `run` block definition.
+`restore` must be called from within a [`run`](/the-run-block.md) block definition.

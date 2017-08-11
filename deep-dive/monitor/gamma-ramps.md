@@ -28,4 +28,4 @@ if monitors.size > 1
 end
 ```
 
-`set_gamma_ramp` and `gamma_ramp=` must be called from within a `run` block definition.
+`set_gamma_ramp` and `gamma_ramp=` must be called from within a [`run`](/the-run-block.md) block definition.

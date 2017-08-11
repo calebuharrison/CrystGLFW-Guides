@@ -15,7 +15,7 @@ The same is true for the green channel and the blue channel:
 puts video_mode.green_bits # => 8
 puts video_mode.blue_bits # => 8
 ```
-`red_bits`, `green_bits`, and `blue_bits` must be called from within a `run` block definition.
+`red_bits`, `green_bits`, and `blue_bits` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `channel_bits`
 Being able to retrieve the bit depths of individual color channels is great - but sometimes you just want them all. Enter `channel_bits`:
@@ -27,4 +27,4 @@ puts channels[:red] #   => 8
 puts channels[:green] # => 8
 puts channels[:blue] #  => 8
 ```
-`channel_bits` must be called from within a `run` block definition.
+`channel_bits` must be called from within a [`run`](/the-run-block.md) block definition.

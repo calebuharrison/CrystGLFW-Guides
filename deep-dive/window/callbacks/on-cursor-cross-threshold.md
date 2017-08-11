@@ -16,4 +16,4 @@ end
 
 With this callback defined, every time the cursor enters or exits `window`, the appropriate message is printed to standard output.
 
-`on_cursor_cross_threshold` must be called from within a `run` block definition.
+`on_cursor_cross_threshold` must be called from within a [`run`](/the-run-block.md) block definition.

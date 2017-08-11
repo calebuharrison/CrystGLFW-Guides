@@ -21,4 +21,4 @@ corners[:bottom_left]
 corners[:bottom_right]
 ```
  
-`corners` must be called from within a `run` block definition. 
+`corners` must be called from within a [`run`](/the-run-block.md) block definition. 

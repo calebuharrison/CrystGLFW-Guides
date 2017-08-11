@@ -13,7 +13,7 @@ window.sticky_mouse_buttons? # => false
 
 `sticky_mouse_buttons?` returns `true` if sticky mouse buttons are enabled, and returns `false` otherwise.
 
-`sticky_mouse_buttons?` must be called from within a `run` block definition.
+`sticky_mouse_buttons?` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `enable_sticky_mouse_buttons` and `disable_sticky_mouse_buttons`
 
@@ -36,5 +36,5 @@ window.disable_sticky_mouse_buttons
 window.sticky_mouse_buttons? # => false
 ```
 
-Both `enable_sticky_mouse_buttons` and `disable_sticky_mouse_buttons` must be called from within a `run` block definition.
+Both `enable_sticky_mouse_buttons` and `disable_sticky_mouse_buttons` must be called from within a [`run`](/the-run-block.md) block definition.
 

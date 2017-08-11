@@ -17,7 +17,7 @@ window.size[:width] # => 600
 window.size[:height # => 400
 ```
 
-`size` must be called from within a `run` block definition.
+`size` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `set_size` and `size=`
 
@@ -59,4 +59,4 @@ window.size # => {width: 640, height: 480}
 
 *s* is of type `NamedTuple(width: Int32, height: Int32`
 
-Both `set_size` and `size=` must be called from within a `run` block definition.
+Both `set_size` and `size=` must be called from within a [`run`](/the-run-block.md) block definition.

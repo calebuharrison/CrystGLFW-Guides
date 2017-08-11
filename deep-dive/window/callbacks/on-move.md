@@ -12,4 +12,4 @@ end
 
 With this callback defined, every time `window` is moved, its new location is printed to standard output.
 
-`on_move` must be called from within a `run` block definition.
+`on_move` must be called from within a [`run`](/the-run-block.md) block definition.

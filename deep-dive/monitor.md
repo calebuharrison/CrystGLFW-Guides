@@ -10,7 +10,7 @@ The `primary` class method returns a `Monitor` object that represents the system
 monitor = CrystGLFW::Monitor.primary
 ```
 
-`primary` must be called from within a `run` block definition.
+`primary` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `all`
 
@@ -21,7 +21,7 @@ monitors = CrystGLFW::Monitor.all
 puts monitors.size # prints the number of currently connected monitors
 ```
 
-`all` must be called from within a `run` block definition.
+`all` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `on_toggle_connection`
 
@@ -36,4 +36,4 @@ CrystGLFW::Monitor.on_toggle_connection do |event|
   end
 end
 ```
-`on_toggle_connection` yields a [`CrystGLFW::Event::MonitorToggleConnection`](/deep-dive/events/monitortoggleconnection.md) to the block, and can be called from outside of a `run` block definition.
+`on_toggle_connection` yields a [`CrystGLFW::Event::MonitorToggleConnection`](/deep-dive/events/monitortoggleconnection.md) to the block, and can be called from outside of a [`run`](/the-run-block.md) block definition.

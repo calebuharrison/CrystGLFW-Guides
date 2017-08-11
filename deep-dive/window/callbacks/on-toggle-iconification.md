@@ -16,4 +16,4 @@ end
 
 With this callback defined, every time the iconification of `window` is toggled, it prints whether or not it is iconified to standard output.
 
-`on_toggle_iconification` must be called from within a `run` block definition.
+`on_toggle_iconification` must be called from within a [`run`](/the-run-block.md) block definition.

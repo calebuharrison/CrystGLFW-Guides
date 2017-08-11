@@ -15,4 +15,4 @@ end
 
 With this callback defined, every time the left mouse button is clicked while `window` has input focus, "the left mouse button was clicked" is printed to standard output.
 
-`on_mouse_button` must be called from within a `run` block definition.
+`on_mouse_button` must be called from within a [`run`](/the-run-block.md) block definition.

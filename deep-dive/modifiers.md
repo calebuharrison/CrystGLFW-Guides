@@ -1,6 +1,6 @@
 # `CrystGLFW::Event::Modifiers`
 
-The `Modifiers` module encapsulates logic associated with events that monitor modifier keys. The following events include modifier functionality:
+The `Modifiers` module encapsulates logic associated with events that listen to modifier keys. The following events include modifier functionality:
 
 - [`CrystGLFW::Event::WindowKey`](/deep-dive/events/windowkey.md)
 - [`CrystGLFW::Event::WindowChar`](/deep-dive/events/windowcharacter.md)

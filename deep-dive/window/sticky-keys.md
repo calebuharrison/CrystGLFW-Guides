@@ -13,7 +13,7 @@ window.sticky_keys? # => false
 
 Obviously, `sticky_keys?` returns `true` if sticky keys are enabled, and `false` if they are disabled. They are disabled by default.
 
-`sticky_keys?` must be called from within a `run` block definition.
+`sticky_keys?` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `enable_sticky_keys` and `disable_sticky_keys`
 
@@ -36,4 +36,4 @@ window.disable_sticky_keys
 window.sticky_keys? # => false
 ```
 
-Both `enable_sticky_keys` and `disable_sticky_keys` must be called from within a `run` block definition.
+Both `enable_sticky_keys` and `disable_sticky_keys` must be called from within a [`run`](/the-run-block.md) block definition.

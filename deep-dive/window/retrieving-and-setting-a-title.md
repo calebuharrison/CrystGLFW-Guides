@@ -11,7 +11,7 @@ window = Window.new(title: "Winston the Window")
 window.title # => "Winston the Window"
 ```
  
-`title` must be called from within a `run` block definition.
+`title` must be called from within a [`run`](/the-run-block.md) block definition.
  
 ## `set_title` and `title=`
 
@@ -35,4 +35,4 @@ window.title = "Walter the Window"
 window.title # => "Walter the Window"
 ```
 
-`set_title` and `title=` must be called from within a `run` block definition.
+`set_title` and `title=` must be called from within a [`run`](/the-run-block.md) block definition.

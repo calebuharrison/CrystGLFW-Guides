@@ -46,7 +46,7 @@ When creating a custom cursor, the `cursor` method accepts the following argumen
 - *x*, the x-coordinate of the cursor's hotspot.
 - *y*, the y-coordinate of the cursor's hotspot.
 
-The `cursor` method must be called from within a `run` block definition.
+The `cursor` method must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `remove_cursor`
 
@@ -59,4 +59,4 @@ cursor = window.cursor(:hand_cursor)
 window.remove_cursor # removes the hand cursor, now the window has no cursor.
 ```
 
-`remove_cursor` must be called from within a `run` block definition.
+`remove_cursor` must be called from within a [`run`](/the-run-block.md) block definition.

@@ -13,7 +13,7 @@ window.focus
 window.focused? # => true
 ```
 
-`focused?` must be called from within a `run` block definition.
+`focused?` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `iconified?`
 
@@ -32,7 +32,7 @@ window.restore
 window.iconified? # => false
 ```
 
-`iconified?` must be called from within a `run` block definition.
+`iconified?` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `maximized?`
 
@@ -51,7 +51,7 @@ window.restore
 window.maximized? # => false
 ```
 
-`maximized?` must be called from within a `run` block definition.
+`maximized?` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `visible?`
 
@@ -70,7 +70,7 @@ window.show
 window.visible? # => true
 ```
 
-`visible?` must be called from within a `run` block definition.
+`visible?` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `resizable?`
 
@@ -86,7 +86,7 @@ window = Window.new(hints: hints)
 window.resizable? # => false
 ```
 
-`resizable?` must be called from within a `run` block definition.
+`resizable?` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `decorated?`
 
@@ -102,7 +102,7 @@ window = Window.new(hints: hints)
 window.decorated? # => false
 ```
 
-`decorated?` must be called from within a `run` block definition.
+`decorated?` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `floating?`
 
@@ -118,4 +118,4 @@ window = Window.new(hints: hints)
 window.floating? # => true
 ```
 
-`floating?` must be called from within a `run` block definition.
+`floating?` must be called from within a [`run`](/the-run-block.md) block definition.

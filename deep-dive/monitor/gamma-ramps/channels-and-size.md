@@ -16,7 +16,7 @@ gamma_ramp.green # => Array(UInt16)
 gamma_ramp.blue # => Array(UInt16)
 ```
 
-`red`, `green`, and `blue` must be called from within a `run` block definition.
+`red`, `green`, and `blue` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `channels`
 
@@ -29,7 +29,7 @@ channels[:green] # => Array(UInt16)
 channels[:blue] # => Array(UInt16)
 ```
 
-`channels` must be called from within a `run` block definition.
+`channels` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `size`
 You can use the `size` method to retrieve the size of the channel response arrays:
@@ -38,4 +38,4 @@ You can use the `size` method to retrieve the size of the channel response array
 gamma_ramp.size # => 1024
 ```
 
-`size` must be called from within a `run` block definition.
+`size` must be called from within a [`run`](/the-run-block.md) block definition.

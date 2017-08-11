@@ -16,7 +16,7 @@ window.show # makes the window visible again.
 
 By default, windows are visible upon creation, though this can be configured via [hints](/deep-dive/window/creating-a-window/window-hints.md).
 
-`show` must be called from within a `run` block definition.
+`show` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `hide`
 
@@ -28,4 +28,4 @@ window = Window.new
 window.hide # makes the window invisible.
 ```
 
-`hide` must be called from within a `run` block definition.
+`hide` must be called from within a [`run`](/the-run-block.md) block definition.

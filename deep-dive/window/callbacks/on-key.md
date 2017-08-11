@@ -19,4 +19,4 @@ end
 
 With this callback defined, every time a key is pressed while `window` has input focus, the key's name is printed to standard output if the key is printable.
 
-`on_key` must be called from within a `run` block definition.
+`on_key` must be called from within a [`run`](/the-run-block.md) block definition.

@@ -12,4 +12,4 @@ end
 
 With this callback defined, every time the cursor is moved while `window` has input focus, the cursor's new location (relative to `window`) is printed to standard output.
 
-`on_cursor_move` must be called from within a `run` block definition.
+`on_cursor_move` must be called from within a [`run`](/the-run-block.md) block definition.

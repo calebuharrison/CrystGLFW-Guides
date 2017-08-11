@@ -12,4 +12,4 @@ end
 
 With this callback defined, every time `window` is refreshed, it prints "window refreshed!" to standard output.
 
-`on_refresh` must be called from within a `run` block definition.
+`on_refresh` must be called from within a [`run`](/the-run-block.md) block definition.

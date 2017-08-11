@@ -1,5 +1,5 @@
 # GLFW Version
-CrystGLFW exposes two methods for getting the version of the underlying GLFW binary. Both can safely be called outside of a `run` block definition.
+CrystGLFW exposes two methods for getting the version of the underlying GLFW binary. Both can safely be called outside of a [`run`](/the-run-block.md) block definition.
 
 ## `version`
 
@@ -12,7 +12,7 @@ puts "The revision version number of GLFW is #{glfw_version[:rev]}"
 
 `version` returns a `NamedTuple(major: Int32, minor: Int32, rev: Int32)`. Each version number is pulled from the underlying GLFW installation on your machine. If part of your application logic needs to use the GLFW version number, use this method to retrieve it.
 
-`version` is safe to use outside of a `run` block definition.
+`version` is safe to use outside of a [`run`](/the-run-block.md) block definition.
 
 ## `version_string`
 The GLFW API exposes a compile-time generated string that describes the version, platform, compiler, and any platform-specific compile-time configurations:
@@ -22,5 +22,5 @@ puts CrystGLFW.version_string # => "3.2.1 Cocoa NSGL chdir menubar retina dynami
 ```
 This method is useful for debugging, but shouldn't be used for your application logic. Use `version` instead.
 
-`version_string` is safe to use outside of a run block definition.
+`version_string` is safe to use outside of a [`run`](/the-run-block.md) block definition.
 

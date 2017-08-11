@@ -11,7 +11,7 @@ window.framebuffer_size # => {width: 1280, height: 960}
 
 Unlike most CrystGLFW *size* representations, **the returned framebuffer_size is in pixels, not screen coordinates**.
 
-`framebuffer_size` must be called from within a `run` block definition.
+`framebuffer_size` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `frame_size`
 
@@ -26,4 +26,4 @@ All four edges of the frame can be accessed: `:top`, `:right`, `:bottom`, and `:
 
 Note that unlike `framebuffer_size`, each edge's size is given in screen coordinates, not pixels.
 
-`frame_size` must be called from within a `run` block definition.
+`frame_size` must be called from within a [`run`](/the-run-block.md) block definition.

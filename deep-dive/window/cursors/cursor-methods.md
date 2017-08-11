@@ -10,7 +10,7 @@ You can retrieve a `Cursor` object's associated [`Window`](/deep-dive/window.md)
 window = cursor.window
 ```
 
-The `window` method must be called from within a `run` block definition.
+The `window` method must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `position`
 
@@ -22,7 +22,7 @@ pos = cursor.position # => NamedTuple(x: Float64, y: Float64)
 
 A cursor's position is always reported **relative to its window's position**. If a `Cursor` is precisely at the top-left corner of its associated [`Window`](/deep-dive/window.md), then its position is (0, 0).
 
-`position` must be called from within a `run` block definition.
+`position` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `set_position` and `position=`
 
@@ -42,7 +42,7 @@ cursor.position # => NamedTuple(x: 150, y: 150)
 
 It's important to remember that a cursor's position is always reported and set **relative to its window's position**.
 
-`set_position` and `position=` must be called from within a `run` block definition.
+`set_position` and `position=` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `in_window?`
 
@@ -58,4 +58,4 @@ end
 
 Obviously, `in_window?` returns `true` when the `Cursor` is inside of its [`Window`](/deep-dive/window.md), and returns `false` otherwise.
 
-`in_window?` must be called from within a `run` block definition.
+`in_window?` must be called from within a [`run`](/the-run-block.md) block definition.

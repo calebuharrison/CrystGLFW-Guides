@@ -11,7 +11,7 @@ window.maximize # maximize the window
 
 Maximization can be reversed with the `restore` method.
 
-`maximize` must be called from within a `run` block definition.
+`maximize` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `focus`
 
@@ -22,5 +22,5 @@ window = Window.new
 window.focus
 ```
 
-`focus` must be called from within a `run` block definition.
+`focus` must be called from within a [`run`](/the-run-block.md) block definition.
 

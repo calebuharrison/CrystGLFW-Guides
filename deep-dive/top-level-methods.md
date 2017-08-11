@@ -7,5 +7,5 @@ require "crystglfw"
 
 CrystGLFW.method_name
 ```
-Some of these methods can be invoked outside of a `run` block definition for configuration purposes.
+Some of these methods can be invoked outside of a [`run`](/the-run-block.md) block definition for configuration purposes.
 

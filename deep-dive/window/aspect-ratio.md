@@ -25,4 +25,4 @@ An alternative syntax is available in the form of `aspect_ratio=`:
 window.aspect_ratio = {numerator: 4, denominator: 3}
 ```
 
-Both `set_aspect_ratio` and `aspect_ratio=` must be called from within a `run` block definition.
+Both `set_aspect_ratio` and `aspect_ratio=` must be called from within a [`run`](/the-run-block.md) block definition.

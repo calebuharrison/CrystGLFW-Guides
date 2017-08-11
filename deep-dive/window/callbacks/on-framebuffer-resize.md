@@ -12,4 +12,4 @@ end
 
 With this callback defined, every time `window`'s framebuffer is resized, its new dimensions are printed to standard output.
 
-`on_framebuffer_resize` must be called from within a `run` block definition.
+`on_framebuffer_resize` must be called from within a [`run`](/the-run-block.md) block definition.

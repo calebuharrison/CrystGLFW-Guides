@@ -12,4 +12,4 @@ window.swap_buffers
 
 You'll most commonly use this method at the end of your main loop to swap buffers upon each iteration. For an example of this, see [the skeleton](/the-skeleton.md).
 
-`swap_buffers` must be called from within a `run` block definition.
+`swap_buffers` must be called from within a [`run`](/the-run-block.md) block definition.

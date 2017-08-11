@@ -15,7 +15,7 @@ pos[:y] # the y-coordinate of the position
 
 The returned *position* is a `NamedTuple(x: Int32, y: Int32)`.
 
-`position` must be called from within a `run` block definition.
+`position` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `set_position` and `position=`
 
@@ -51,4 +51,4 @@ window.position = {x: 100, y: 100} # sets the window's top-left corner at (100, 
 
 *pos* is of type `NamedTuple(x: Int32, y: Int32)`
 
-Both `set_position` and `position=` must be called from within a `run` block definition.
+Both `set_position` and `position=` must be called from within a [`run`](/the-run-block.md) block definition.

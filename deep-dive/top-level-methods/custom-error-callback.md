@@ -20,4 +20,4 @@ end
 ```
 It is the humble opinion of this guide that you not change this, and instead rescue exceptions where necessary. But hey - go crazy!
 
-`on_error` can be invoked outside of a `run` block definition.
+`on_error` can be invoked outside of a [`run`](/the-run-block.md) block definition.

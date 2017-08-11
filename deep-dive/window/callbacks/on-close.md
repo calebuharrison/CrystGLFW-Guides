@@ -12,4 +12,4 @@ end
 
 With this callback defined, when the `window` is closed, it will print "Bye!" to standard output.
 
-`on_close` must be called from within a `run` block definition.
+`on_close` must be called from within a [`run`](/the-run-block.md) block definition.

@@ -12,7 +12,7 @@ end
 ```
 `poll_events` will check the event queue, process any of the events inside of that queue, and then immediately return, allowing the application to continue its execution of the loop. `poll_events` returns even if there are no events in the queue. This is perfect for games that need to continue rendering new frames even when the user remains idle.
 
-Of course, `poll_events` must be called from within a `run` block definition.
+Of course, `poll_events` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `wait_events`
 What if your application only needs to draw new frames upon receiving some sort of event in the queue? Say hello to `wait_events`:
@@ -37,7 +37,7 @@ This forces `wait_events` to return at an interval of at least *timeout*. In thi
 
 `wait_events` is preferable to `poll_events` when possible, simply because it's less CPU-intensive. Many applications require `poll_events`, however - use the right tool for the job!
 
-`wait_events` must be called from within a `run` block definition.
+`wait_events` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `post_empty_event`
 If, for some reason, you need to force `wait_events` to return manually, you can do so with `post_empty_event`:
@@ -47,4 +47,4 @@ CrystGLFW.post_empty_event # post a dummy event to the queue
 ```
 This posts an empty event to the queue, forcing `wait_events` to wake the thread and return, resuming execution.
 
-`post_empty_event` must be called from within a `run` block definition.
+`post_empty_event` must be called from within a [`run`](/the-run-block.md) block definition.
