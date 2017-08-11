@@ -2,7 +2,7 @@
 
 There are a number of constraints that can be placed on a `Window` and its context at the time of its creation. It is highly recommended that you read the [GLFW documentation's section on window hints](http://www.glfw.org/docs/latest/window_guide.html#window_hints) to gain an understanding of what each option does.
 
-`CrystGLFW` requires that hints be placed in a `Hash` that is then passed to the window initializer. Although the documentation linked above provides helpful descriptions of each option, the table below should be referenced for how to construct your `Hash`:
+`CrystGLFW` requires that hints be placed in a `Hash` that is then passed to the window initializer. Although the documentation linked above provides helpful descriptions of each option, the table below should be referenced for how to construct your `Hash` while using `CrystGLFW`:
 
 | Hint Label | Default Value | Supported Values |
 | ---------- | ------------- | ---------------- |
@@ -38,3 +38,13 @@ There are a number of constraints that can be placed on a `Window` and its conte
 | `:opengl_forward_compat` | `false` | `true` or `false` |
 | `:opengl_debug_context` | `false` | `true` or `false` |
 | `:opengl_profile` | `:opengl_any_profile` | `:opengl_any_profile`, `:opengl_compat_profile`, or `:opengl_core_profile` |
+
+## Examples
+
+```crystal
+hints = { :context_version_major => 4,
+          :context_version_minor => 1,
+          :forward_compat => true,
+          :visible => false
+          :samples => :dont_care }
+```
