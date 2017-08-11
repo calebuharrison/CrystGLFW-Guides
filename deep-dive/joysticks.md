@@ -46,16 +46,30 @@ You can determine if a `Joystick` is currently connected using the `connected?` 
 joystick.connected? # => Bool
 ```
 
+`connected?` returns `true` if the joystick is connected, and `false` if not.
+
+## `name`
+
+You can retrieve the manufacturer's name for a `Joystick` using the `name` method:
+
+```crystal
+puts joystick.name if joystick.connected? # => String
+```
+
+Make sure you check that the `Joystick` is actually connected first!
+
 ## `axes`
 
 You can retrieve the values of each axis on a `Joystick` using the `axes` method:
 
 ```crystal
 joystick = CrystGLFW::Joystick.new(:joystick_1)
-joystick.axes # => Array(Float32)
+joystick.axes if joystick.connected? # => Array(Float32)
 ```
 
 The return value is an array of `Float32`, each between -1.0 and 1.0.
+
+Make sure you check that the `Joystick` is actually connected first!
 
 ## `buttons`
 
@@ -63,10 +77,12 @@ You can retrieve the state of each button on a `Joystick` using the `buttons` me
 
 ```crystal
 joystick = CrystGLFW::Joystick.new(:joystick_1)
-joystick.buttons # => Array(Bool)
+joystick.buttons if joystick.connected? # => Array(Bool)
 ```
 
 The return value is an array of `Bool`, where `true` means that the button is pressed, and `false` means that the button is released.
+
+Make sure you check that the `Joystick` is actually connected first!
 
 ## `is?`
 
