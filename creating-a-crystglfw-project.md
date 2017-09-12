@@ -36,7 +36,7 @@ This makes all of CrystGLFW accessible in your file. You can make sure things ar
 require "crystglfw"
 
 version = CrystGLFW.version # => {major: 3, minor: 2, rev: 1}
-puts "#{version[:major]}.#{version[:minor}.#{version[:rev]}" # => "3.2.1"
+puts "#{version[:major]}.#{version[:minor]}.#{version[:rev]}" # => "3.2.1"
 ```
 
 Remember to compile and run your project from the project's root. Otherwise, the compiler may complain about being unable to locate CrystGLFW.
