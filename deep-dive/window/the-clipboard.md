@@ -13,7 +13,7 @@ puts window.clipboard # prints the contents of the system clipboard to the scree
 
 If the clipboard is empty or not UTF-8 encoded, a `CrystGLFW::Error::FormatUnavailable` will be raised.
 
-`clipboard` must be called from within a `run` block definition.
+`clipboard` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `set_clipboard`
 
@@ -35,4 +35,4 @@ window.clipboard = "Hello World!"
 window.clipboard # => "Hello World!"
 ```
 
-Both `clipboard` and `clipboard=` must be called from within a `run` block definition.
+Both `clipboard` and `clipboard=` must be called from within a [`run`](/the-run-block.md) block definition.

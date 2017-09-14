@@ -8,7 +8,7 @@ The current gamma ramp of a [`Monitor`](/deep-dive/monitor.md) can be retrieved 
 ```crystal
 gamma_ramp = CrystGLFW::Monitor.primary.gamma_ramp # => CrystGLFW::Monitor::GammaRamp
 ```
-`gamma_ramp` must be called from within a `run` block definition.
+`gamma_ramp` must be called from within a [`run`](/the-run-block.md) block definition.
 
 ## `set_gamma_ramp` and `gamma_ramp=`
 If you'd like to manually set a gamma ramp for a [`Monitor`](/deep-dive/monitor.md), you can do so with `set_gamma_ramp`:
