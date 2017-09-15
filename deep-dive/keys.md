@@ -28,7 +28,8 @@ If a `Key` is "printable", then it has an internal name. You can retrieve this n
 
 ```crystal
 window.on_key do |event|
-  puts event.key.name if key.printable?
+  key = event.key
+  puts key.name if key.printable?
 end
 ```
 
