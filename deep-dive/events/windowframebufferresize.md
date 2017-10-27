@@ -6,7 +6,7 @@ A `CrystGLFW::Event::WindowFramebufferResize` is generated when the frame buffer
 window = Window.new
 
 window.on_framebuffer_resize do |event|
-  puts "frame buffer resized to #{event.width}x#{event.height}"
+  puts "frame buffer resized to #{event.size}"
 end
 ```
 
@@ -18,11 +18,10 @@ You can retrieve the event's associated [`Window`](/deep-dive/window.md) using t
 event.window # => CrystGLFW::Window
 ```
 
-## `width` and `height`
+## `size`
 
-You can retrieve the new size of the frame buffer using the `width` and `height` methods:
+You can retrieve the new size of the frame buffer using the `size` method:
 
 ```crystal
-event.width # => Int32
-event.height # => Int32
+event.size # => {width: Int32, height: Int32}
 ```

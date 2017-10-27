@@ -7,7 +7,7 @@ window = Window.new
 
 window.on_mouse_button do |event|
   mouse_button = event.mouse_button
-  if event.press? && mouse_button.is? :mouse_button_left
+  if event.action.press? && mouse_button.left?
     puts "the left mouse button was clicked"
   end  
 end
@@ -29,14 +29,14 @@ You can retrieve the [`MouseButton`](/deep-dive/mouse-buttons.md) that was press
 event.mouse_button # => CrystGLFW::MouseButton
 ```
 
-## `press?` and `release?`
+## `action`
 
-You can check what kind of action was performed on the key using `press?` and `release?`:
+You can retrieve the [Action](/action.md) that was performed using the `action` method:
 
 ```crystal
-if event.press?
+if event.action.press?
   puts "mouse button was pressed"
-elsif event.release?
+elsif event.action.release?
   puts "mouse button was released"
 else
   puts "impossible!"

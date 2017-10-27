@@ -6,7 +6,7 @@ The `on_move` method defines callback behavior that is triggered when a [`Window
 window = Window.new
 
 window.on_move do |event|
-  puts "window moved to (#{event.x}, #{event.y})"
+  puts "window moved to #{event.position}"
 end
 ```
 

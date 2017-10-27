@@ -6,7 +6,7 @@ A `CrystGLFW::Event::WindowScroll` is generated when the user scrolls while a [`
 window = Window.new
 
 window.on_scroll do |event|
-  puts "scroll offset: (#{event.x}, #{event.y})"
+  puts "scroll offset: #{event.offset}"
 end
 ```
 
@@ -18,11 +18,10 @@ You can retrieve the event's associated [`Window`](/deep-dive/window.md) using t
 event.window # => CrystGLFW::Window
 ```
 
-## `x` and `y`
+## `offset`
 
-You can retrieve the scroll offset using the `x` and `y` methods:
+You can retrieve the scroll offset using the `offset` method:
 
 ```crystal
-event.x # => Int32
-event.y # => Int32
+event.offset # => {x: Float64, y: Float64}
 ```

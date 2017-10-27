@@ -1,12 +1,12 @@
 # `CrystGLFW::Joystick`
 
-A `CrystGLFW::Joystick` (or `Joystick`, for the purposes of this guide) represents a physical controller connected to the system. GLFW has 16 available joystick "slots", and a `Joystick` is simply a means of interacting with one of those slots.
+A `CrystGLFW::Joystick` (or `Joystick`, for the purposes of this guide) represents a physical controller connected to the system. GLFW has 16 available joystick "slots", and a `Joystick` is simply a means of interacting with one of those slots. Internally `Joystick` is implemented as a Crystal Enum.
 
-Joysticks can be identified through their *labels*. A label is simply a Crystal `Symbol` that references a specific `Joystick` slot. Joystick labels are derived from the names of the constants that represent them in the GLFW specification. The list of GLFW joysticks can be found [here](http://www.glfw.org/docs/latest/group__joysticks.html). Take the name of the constant, remove the "GLFW_" prefix, and convert it to a lowercase `Symbol` to get the label. For example:
+Joystick member names are derived from the names of the constants that represent them in the GLFW specification. The list of GLFW joysticks can be found [here](http://www.glfw.org/docs/latest/group__joysticks.html). Take the name of the constant, remove the "GLFW_JOYSTICK_" prefix and replace it with "Joystick::", and convert the rest to UpperCamelCase to get the name. For example:
 
-`GLFW_JOYSTICK_1` is represented in `CrystGLFW` as `:joystick_1`.
-`GLFW_JOYSTICK_2` is `:joystick_2`.
-`GLFW_JOYSTICK_LAST` is `:joystick_last`.
+`GLFW_JOYSTICK_1` is represented in `CrystGLFW` as `Joystick::One`.
+`GLFW_JOYSTICK_2` is `Joystick::Two`.
+`GLFW_JOYSTICK_LAST` is `Joystick::Last`.
 
 And so on and so forth.
 
@@ -27,16 +27,6 @@ end
 ```
 
 `on_toggle_connection` yields a [`CrystGLFW::Event::JoystickToggleConnection`](/deep-dive/events/joysticktoggleconnection.md) to the block, and can be called from outside of a [`run`](/the-run-block.md) block definition.
-
-## `new`
-
-You can create a `Joystick` that interfaces with a joystick slot using the `new` method:
-
-```crystal
-joystick = CrystGLFW::Joystick.new(:joystick_1)
-```
-
-All you need to do is pass the joystick label that you'd like the instance to reference. The above example sets up a joystick that controls whatever is in the first joystick slot.
 
 ## `connected?`
 
@@ -63,11 +53,10 @@ Make sure you check that the `Joystick` is actually connected first!
 You can retrieve the values of each axis on a `Joystick` using the `axes` method:
 
 ```crystal
-joystick = CrystGLFW::Joystick.new(:joystick_1)
-joystick.axes if joystick.connected? # => Array(Float32)
+joystick.axes if joystick.connected? # => Slice(Float32)
 ```
 
-The return value is an array of `Float32`, each between -1.0 and 1.0.
+The return value is an enumerable Slice of `Float32`, each between -1.0 and 1.0.
 
 Make sure you check that the `Joystick` is actually connected first!
 
@@ -76,7 +65,6 @@ Make sure you check that the `Joystick` is actually connected first!
 You can retrieve the state of each button on a `Joystick` using the `buttons` method:
 
 ```crystal
-joystick = CrystGLFW::Joystick.new(:joystick_1)
 joystick.buttons if joystick.connected? # => Array(Bool)
 ```
 
@@ -84,20 +72,14 @@ The return value is an array of `Bool`, where `true` means that the button is pr
 
 Make sure you check that the `Joystick` is actually connected first!
 
-## `is?`
+## Checking Joysticks
 
-You can use joystick labels to identify instances of `Joystick` using the `is?` method:
+Because `Joystick` is an Enum, question methods are available for each possible value of a given `Joystick`:
 
 ```crystal
 CrystGLFW::Joystick.on_toggle_connection do |event|
-  if event.joystick.is?(:joystick_1)
+  if event.joystick.one?
     puts "The joystick in slot 1 was just connected or disconnected."
   end
 end
 ```
-
-`is?` returns `true` if the given label matches the `Joystick`, and returns `false` otherwise.
-
-You can pass an arbitrary number of labels, and `is?` will return `true` if any one of the labels matches the `Joystick`.
-
-All `Joystick` functionality must be called from within a [`run`](/the-run-block.md) block definition.

@@ -1,14 +1,17 @@
 # `CrystGLFW::Key`
 
-A `CrystGLFW::Key` (or `Key`, for the purposes of this guide) represents an individual key on the keyboard. Currently, you cannot create a `Key` directly - they are created and destroyed internally.
+A `CrystGLFW::Key` (or `Key`, for the purposes of this guide) represents an individual key on the keyboard. Internally, `Key` is implemented as a Crystal Enum.
 
-Keys can be identified through their *labels*. A label is simply a Crystal `Symbol` that references a specific `Key`. Key labels are derived from the names of the constants that represent them in the GLFW specification. The list of GLFW keys can be found [here](http://www.glfw.org/docs/latest/group__keys.html). Take the name of the constant, remove the "GLFW_" prefix, and convert it to a lowercase `Symbol` to get the label. For example:
+Key member names are derived from the names of the constants that represent them in the GLFW specification. The list of GLFW keys can be found [here](http://www.glfw.org/docs/latest/group__keys.html). Take the name of the constant, remove the "GLFW_KEY_" prefix and replace it with "Key::", and convert the rest of the key name to UpperCamelCase to get the member name. For example:
 
-`GLFW_KEY_A` is represented in `CrystGLFW` as `:key_a`.
-`GLFW_KEY_LEFT_SHIFT` is `:key_left_shift`.
-`GLFW_KEY_EQUAL` is `:key_equal`.
+`GLFW_KEY_A` is represented in `CrystGLFW` as `Key::A`.
+`GLFW_KEY_LEFT_SHIFT` is `Key::LeftShift`.
+`GLFW_KEY_EQUAL` is `:key::Equal`.
 
-And so on and so forth.
+And so on and so forth. A drawback of this approach is that key names that begin with a number must have that number spelled out:
+
+`GLFW_KEY_0` is represented in `CrystGLFW` as `Key::Zero`.
+`GLFW_Key_F1` is simply `Key::F1`, because it does not begin with a number.
 
 ## `printable?`
 
@@ -35,38 +38,21 @@ end
 
 If the `Key` is not printable, an exception will be raised.
 
-## `is?`
+## Checking Keys
 
-You can use key labels to identify instances of `Key` using the `is?` method:
+Because `Key` is an Enum, question methods are available for each possible value of a given `Key`:
 
 ```crystal
 window.on_key do |event|
   key = event.key
-  if key.is?(:key_a)
-    puts "key a"
-  elsif key.is?(:key_b)
-    puts "key b"
+  if key.a?
+    puts "key a was pressed"
+  elsif key.b?
+    puts "key b was pressed"
+  elsif key.caps_lock?
+    puts "caps lock was pressed"
   else
     puts "other key"
   end
 end
 ```
-
-`is?` returns `true` if the given label matches the `Key`, and returns `false` otherwise.
-
-You can pass an arbitrary number of labels, and `is?` will return `true` if any one of the labels matches the `Key`:
-
-```crystal
-window.on_key do |event|
-  key = event.key
-  if key.is?(:key_a, :key_b, :key_c)
-    puts "A, B, or C!"
-  elsif key.is?(:key_1, :key_2, :key_3)
-    puts "1, 2, or 3!"
-  else
-    puts "no."
-  end
-end
-```
-
-All `Key` functionality must be called from within a [`run`](/the-run-block.md) block definition.

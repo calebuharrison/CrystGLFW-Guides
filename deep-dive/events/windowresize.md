@@ -6,7 +6,7 @@ A `CrystGLFW::Event::WindowResize` is generated when a [`Window`](/deep-dive/win
 window = Window.new
 
 window.on_resize do |event|
-  puts "window resized to #{event.width}x#{event.height}"
+  puts "window resized to #{event.size}"
 end
 ```
 
@@ -18,11 +18,10 @@ You can retrieve the event's associated [`Window`](/deep-dive/window.md) using t
 event.window # => CrystGLFW::Window
 ```
 
-## `width` and `height`
+## `size`
 
-You can retrieve the new size of the [`Window`](/deep-dive/window.md) using the `width` and `height` methods:
+You can retrieve the new size of the [`Window`](/deep-dive/window.md) using the `size` method:
 
 ```crystal
-event.width # => Int32
-event.height # => Int32
+event.size # => {width: Int32, height: Int32}
 ```

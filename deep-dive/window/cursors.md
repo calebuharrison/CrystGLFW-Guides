@@ -13,24 +13,25 @@ cursor = window.cursor # => CrystGLFW::Window::Cursor
 
 Internally, if `window` does not yet have a cursor assigned to it, then one will be created and returned from the `cursor` method. If a `Cursor` has already been created for this `window`, then that `Cursor` will be returned.
 
-If you wish to create a new `Cursor` for `window` with a given shape, you can pass the shape's label to the `cursor` method:
+If you wish to create a new `Cursor` for `window` with a given `Cursor::Shape`, you can pass it to the `cursor` method:
 
 ```crystal
 window = Window.new
-cursor = window.cursor(:arrow_cursor) # creates a cursor with the standard arrow shape
+cursor = window.cursor(Window::Cursor::Shape::Arrow) # creates a cursor with the standard arrow shape
 
-cursor = window.cursor(:crosshair_cursor) # creates a cursor with the crosshair shape
+cursor = window.cursor(Window::Cursor::Shape::Crosshair) # creates a cursor with the crosshair shape
 
 cursor = window.cursor # returns the previously created crosshair cursor.
 ```
 
-The following shapes are allowed:
-- :arrow_cursor
-- :hand_cursor
-- :crosshair_cursor
-- :vresize_cursor
-- :hresize_cursor
-- :ibeam_cursor
+The available shapes are:
+
+- `Arrow`
+- `IBeam`
+- `Crosshair`
+- `Hand`
+- `HResize`
+- `VResize`
 
 You can also create a `Cursor` with a custom appearance:
 
@@ -54,7 +55,7 @@ You can remove a window's cursor without assigning a new cursor using the `remov
 
 ```crystal
 window = Window.new
-cursor = window.cursor(:hand_cursor)
+cursor = window.cursor(Window::Cursor::Shape::Hand)
 
 window.remove_cursor # removes the hand cursor, now the window has no cursor.
 ```

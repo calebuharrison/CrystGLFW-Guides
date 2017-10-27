@@ -7,7 +7,7 @@ window = Window.new
 
 window.on_key do |event|
   key = event.key
-  if event.press?
+  if event.action.press?
     if key.printable?
       puts "#{key.name} was pressed"
     else
@@ -33,16 +33,16 @@ You can retrieve the [`Key`](/deep-dive/keys.md) that was pressed/released/held 
 event.key # => CrystGLFW::Key
 ```
 
-## `press?`, `release?`, and `repeat?`
+## `action`
 
-You can check what kind of action was performed on the key using `press?`, `release?` and `repeat?`:
+You can retrieve the [Action](/action.md) that was performed using the `action` method:
 
 ```crystal
-if event.press?
+if event.action.press?
   puts "key was pressed"
-elsif event.release?
+elsif event.action.release?
   puts "key was released"
-elsif key.repeat?
+elsif key.action.repeat?
   puts "key was held down"
 else
   puts "impossible!"

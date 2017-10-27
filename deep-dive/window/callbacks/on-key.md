@@ -7,7 +7,7 @@ window = Window.new
 
 window.on_key do |event|
   key = event.key
-  if event.press?
+  if event.action.press?
     if key.printable?
       puts "#{key.name} was pressed"
     else

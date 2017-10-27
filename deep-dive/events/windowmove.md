@@ -6,7 +6,7 @@ A `CrystGLFW::Event::WindowMove` is generated when a [`Window`](/deep-dive/windo
 window = Window.new
 
 window.on_move do |event|
-  puts "window moved to (#{event.x}, #{event.y})"
+  puts "window moved to #{event.position}"
 end
 ```
 
@@ -18,11 +18,10 @@ You can retrieve the event's associated [`Window`](/deep-dive/window.md) using t
 event.window # => CrystGLFW::Window
 ```
 
-## `x` and `y`
+## `position`
 
-You can retrieve the new coordinates of the [`Window`](/deep-dive/window.md) using the `x` and `y` methods:
+You can retrieve the new coordinates of the [`Window`](/deep-dive/window.md) using the `position` method:
 
 ```crystal
-event.x # => Int32
-event.y # => Int32
+event.position # => {x: Int32, y: Int32}
 ```

@@ -6,7 +6,7 @@ The `on_framebuffer_resize` method defines callback behavior that is triggered w
 window = Window.new
 
 window.on_framebuffer_resize do |event|
-  puts "window frame buffer resized to #{event.width}x#{event.height}"
+  puts "window frame buffer resized to #{event.size}"
 end
 ```
 

@@ -18,9 +18,9 @@ The initializer takes the following arguments:
 
 You'll need to use another library to extract the pixel data from various image formats. The pixel data in *pixels* should be arranged left-to-right, top-to-bottom.
 
-## `width`, `height`, and `pixels`
+## `size` and `pixels`
 
-`Image` has only three public methods, each of which merely expose the attributes given to it upon initialization:
+`Image` has only two public methods, both of which merely expose the attributes given to it upon initialization:
 
 ```crystal
 width, height = 16, 16
@@ -28,9 +28,8 @@ white = 255
 pixels = Array(UInt8).new(width * height, white)
 image = CrystGLFW::Window::Image.new(width, height, pixels)
 
-image.width # => 16
-image.height # => 16
+image.size # => {width: 16, height: 16}
 image.pixels # => Array(UInt8)
 ```
 
-`width`, `height`, and `pixels` must be called from within a [`run`](/the-run-block.md) block definition.
+`size` and `pixels` must be called from within a [`run`](/the-run-block.md) block definition.

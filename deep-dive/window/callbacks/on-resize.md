@@ -6,7 +6,7 @@ The `on_resize` method defines callback behavior that is triggered when a [`Wind
 window = Window.new
 
 window.on_resize do |event|
-  puts "window resized to #{event.width}x#{event.height}"
+  puts "window resized to #{event.size}"
 end
 ```
 

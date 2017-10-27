@@ -6,7 +6,7 @@ The `on_cursor_move` method defines callback behavior that is triggered when the
 window = Window.new
 
 window.on_cursor_move do |event|
-  puts "cursor moved to (#{event.x}, #{event.y})"
+  puts "cursor moved to #{event.position}"
 end
 ```
 

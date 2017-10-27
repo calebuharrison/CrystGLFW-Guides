@@ -6,7 +6,7 @@ The `on_scroll` method defines callback behavior that is triggered when the user
 window = Window.new
 
 window.on_scroll do |event|
-  puts "scroll offset: (#{event.x}, #{event.y})"
+  puts "scroll offset: #{event.offset}"
 end
 ```
 

@@ -18,19 +18,6 @@ gamma_ramp.blue # => Array(UInt16)
 
 `red`, `green`, and `blue` must be called from within a [`run`](/the-run-block.md) block definition.
 
-## `channels`
-
-If you'd like to get all of the channels at once, you can use the `channels` method:
-
-```crystal
-channels = gamma_ramp.channels
-channels[:red] # => Array(UInt16)
-channels[:green] # => Array(UInt16)
-channels[:blue] # => Array(UInt16)
-```
-
-`channels` must be called from within a [`run`](/the-run-block.md) block definition.
-
 ## `size`
 You can use the `size` method to retrieve the size of the channel response arrays:
 

@@ -10,6 +10,6 @@ The `current` class method returns the `Window` object whose context is current:
 current_window = CrystGLFW::Window.current
 current_window # => CrystGLFW::Window
 ```
-If there is no current context, then a `CrystGLFW::Error::NoCurrentContext` is raised.
+If there is no current context, then an exception is raised by  `Error::NoCurrentContext`.
 
 `current` must be called from within a [`run`](/the-run-block.md) block definition.

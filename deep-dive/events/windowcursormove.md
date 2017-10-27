@@ -6,7 +6,7 @@ A `CrystGLFW::Event::WindowCursorMove` is generated when the system cursor is mo
 window = Window.new
 
 window.on_cursor_move do |event|
-  puts "cursor moved to (#{event.x}, #{event.y})"
+  puts "cursor moved to #{event.position}"
 end
 ```
 
@@ -26,11 +26,10 @@ You can retrieve the [`Cursor`](/deep-dive/window/cursors.md) associated with th
 event.cursor # => CrystGLFW::Cursor
 ```
 
-## `x` and `y`
+## `position`
 
-You can retrieve the new coordinates of the cursor using the `x` and `y` methods:
+You can retrieve the new coordinates of the cursor using the `position` method:
 
 ```crystal
-event.x # => Float64
-event.y # => Float64
+event.position # => {x: Float64, y: Float64}
 ```
