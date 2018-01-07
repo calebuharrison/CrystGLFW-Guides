@@ -1,17 +1,19 @@
 # `CrystGLFW::Key`
 
-A `CrystGLFW::Key` (or `Key`, for the purposes of this guide) represents an individual key on the keyboard. Internally, `Key` is implemented as a Crystal Enum.
+A `CrystGLFW::Key` \(or `Key`, for the purposes of this guide\) represents an individual key on the keyboard. Internally, `Key` is implemented as a Crystal Enum.
 
 Key member names are derived from the names of the constants that represent them in the GLFW specification. The list of GLFW keys can be found [here](http://www.glfw.org/docs/latest/group__keys.html). Take the name of the constant, remove the "GLFW_KEY_" prefix and replace it with "Key::", and convert the rest of the key name to UpperCamelCase to get the member name. For example:
 
-`GLFW_KEY_A` is represented in `CrystGLFW` as `Key::A`.
-`GLFW_KEY_LEFT_SHIFT` is `Key::LeftShift`.
+`GLFW_KEY_A` is represented in `CrystGLFW` as `Key::A`.  
+`GLFW_KEY_LEFT_SHIFT` is `Key::LeftShift`.  
 `GLFW_KEY_EQUAL` is `:key::Equal`.
 
 And so on and so forth. A drawback of this approach is that key names that begin with a number must have that number spelled out:
 
-`GLFW_KEY_0` is represented in `CrystGLFW` as `Key::Zero`.
+`GLFW_KEY_0` is represented in `CrystGLFW` as `Key::Zero`.  
 `GLFW_Key_F1` is simply `Key::F1`, because it does not begin with a number.
+
+Note: You'll want to \[check this GLFW docs page\]\(http://www.glfw.org/docs/latest/group\_\_keys.html\) if you're using a non-US keyboard and are confused by the results.
 
 ## `printable?`
 
@@ -56,3 +58,6 @@ window.on_key do |event|
   end
 end
 ```
+
+
+
