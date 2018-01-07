@@ -13,7 +13,7 @@ And so on and so forth. A drawback of this approach is that key names that begin
 `GLFW_KEY_0` is represented in `CrystGLFW` as `Key::Zero`.  
 `GLFW_Key_F1` is simply `Key::F1`, because it does not begin with a number.
 
-Note: You'll want to \[check this GLFW docs page\]\(http://www.glfw.org/docs/latest/group\_\_keys.html\) if you're using a non-US keyboard and are confused by the results.
+Note: You'll want to [check out this page from the GLFW docs](http://www.glfw.org/docs/latest/group__keys.html) if you're using a non-US keyboard and are confused by the results.
 
 ## `printable?`
 
